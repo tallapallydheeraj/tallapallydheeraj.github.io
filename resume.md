@@ -38,7 +38,7 @@ failure handling.
 - Build and support services on **Amazon EKS (Kubernetes)** for containerized
 workloads requiring orchestration and scaling.
 - Design and develop **product APIs** that expose specialty pharmacy capabilities
-to internal and partner systems, with clear contracts, versioning, and documentation.
+to internal and partner systems, with clear contracts, versioning, and documentation; fronted by **API Gateway** and a **Gateway Lambda (BFF)** that either responds directly for simple calls or starts **Step Functions** for complex orchestration.
 - Built a **reusable, generic API Lambda layer** with Parameter Store config, DynamoDB-driven error messages, exception handling (including ignoreStatusCode and problem-object wrapping), multi-host and optional per-API auth, all content types (JSON/XML/string), S3 offload for responses >256 KB, and custom response-type handling; reduces duplicated logic across dozens of workflows.
 - Use **JSONata** for runtime payload transformation and conditional branching
 inside workflow executions.
@@ -49,9 +49,9 @@ implementation, refactoring, and documentation while maintaining code quality.
 - Set up **GitHub Copilot to automatically review every PR**, with custom instructions to make reviews easier and more consistent across the team.
 - Provision and manage infrastructure using **Terraform**, enabling consistent
 deployments across environments.
-- Ensure secure handling of sensitive healthcare data using **IAM, SSM,
+- Ensure secure handling of sensitive healthcare data using **IAM, KMS, SSM,
 Secrets Manager, and OAuth 2.0**.
-- Monitor and troubleshoot production systems using **CloudWatch and Splunk**,
+- Monitor and troubleshoot production systems using **CloudWatch, Dynatrace, and Splunk**,
 improving reliability and observability.
 - Collaborate with frontend engineers, architects, and business stakeholders
 in an agile environment.

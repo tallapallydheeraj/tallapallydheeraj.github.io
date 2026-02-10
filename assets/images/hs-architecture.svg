@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-label="High-level AWS serverless architecture: UI to API Gateway to Gateway Lambda (BFF) to direct response or Step Functions orchestration with downstream services">
+  <defs>
+    <style>
+      .title { font: 700 22px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 500 14px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #475569; }
+      .label { font: 600 13px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #0f172a; }
+      .text { font: 500 12px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #1f2937; }
+      .small { font: 500 11px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #334155; }
+      .layer { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 1.2; }
+      .box { fill: #ffffff; stroke: #94a3b8; stroke-width: 1.2; }
+      .accent { fill: #eef2ff; stroke: #6366f1; stroke-width: 1.2; }
+      .accent2 { fill: #ecfeff; stroke: #06b6d4; stroke-width: 1.2; }
+      .warn { fill: #fff7ed; stroke: #fb923c; stroke-width: 1.2; }
+      .ok { fill: #ecfdf5; stroke: #10b981; stroke-width: 1.2; }
+      .arrow { stroke: #334155; stroke-width: 1.6; fill: none; }
+      .dashed { stroke-dasharray: 6 5; }
+    </style>
+    <marker id="arrowHead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+  </defs>
+
+  <!-- Header -->
+  <text x="40" y="48" class="title">Architecture Overview (UI -&gt; API Gateway -&gt; Gateway Lambda (BFF) -&gt; Step Functions / Services)</text>
+  <text x="40" y="74" class="subtitle">Gateway Lambda returns directly for simple calls; complex workflows use Step Functions with JSONata and downstream AWS services.</text>
+
+  <!-- Layer containers -->
+  <rect x="30" y="100" width="360" height="310" rx="14" class="layer"/>
+  <text x="50" y="128" class="label">1) User Interaction Layer</text>
+
+  <rect x="410" y="100" width="320" height="310" rx="14" class="layer"/>
+  <text x="430" y="128" class="label">2-3) Frontend + Integration</text>
+
+  <rect x="750" y="100" width="300" height="310" rx="14" class="layer"/>
+  <text x="770" y="128" class="label">4) API Gateway Layer</text>
+
+  <rect x="1070" y="100" width="300" height="310" rx="14" class="layer"/>
+  <text x="1090" y="128" class="label">5) Backend Services</text>
+
+  <rect x="30" y="430" width="1340" height="330" rx="14" class="layer"/>
+  <text x="50" y="458" class="label">6-9) Data, Analytics, Monitoring/Security, External Integrations</text>
+
+  <!-- User Interaction Layer boxes -->
+  <rect x="60" y="150" width="300" height="90" rx="12" class="box"/>
+  <text x="80" y="182" class="label">Users / Patients</text>
+  <text x="80" y="206" class="text">Interact via web UI (login, scheduling,</text>
+  <text x="80" y="224" class="text">verification, order flows)</text>
+
+  <rect x="60" y="260" width="300" height="120" rx="12" class="accent2"/>
+  <text x="80" y="292" class="label">Workspace / CRM Portal (UI)</text>
+  <text x="80" y="316" class="small">Modules: Login / Schedule / Verification / Orders</text>
+  <text x="80" y="338" class="small">Event-driven UX: screen-pop / contextual views</text>
+
+  <!-- Frontend + Integration -->
+  <rect x="440" y="150" width="260" height="90" rx="12" class="box"/>
+  <text x="460" y="182" class="label">CloudFront + S3</text>
+  <text x="460" y="206" class="text">Static asset + module delivery</text>
+
+  <rect x="440" y="255" width="260" height="60" rx="12" class="box"/>
+  <text x="460" y="290" class="label">User Version Config</text>
+
+  <rect x="440" y="330" width="260" height="70" rx="12" class="warn"/>
+  <text x="460" y="360" class="label">Outbound/Inbound Comms</text>
+  <text x="460" y="382" class="small">Genesys / PCAS / Legacy events</text>
+
+  <!-- API Gateway -->
+  <rect x="780" y="160" width="240" height="110" rx="12" class="accent"/>
+  <text x="800" y="192" class="label">HS Gateway (API Gateway)</text>
+  <text x="800" y="216" class="small">Routes requests to backend (BFF)</text>
+  <text x="800" y="238" class="small">APIs: Person / Prescription / Encounter</text>
+  <text x="800" y="258" class="small">Order / Submission / ...</text>
+
+  <rect x="780" y="285" width="240" height="95" rx="12" class="box"/>
+  <text x="800" y="318" class="label">Auth / Access</text>
+  <text x="800" y="342" class="small">Okta (OIDC/OAuth) -&gt; JWT validation</text>
+  <text x="800" y="364" class="small">Correlation IDs / tracing headers</text>
+
+  <!-- Backend Services -->
+  <rect x="1100" y="150" width="240" height="90" rx="12" class="accent"/>
+  <text x="1120" y="182" class="label">Gateway Lambda (BFF)</text>
+  <text x="1120" y="206" class="small">Backend-for-Frontend API layer</text>
+  <text x="1120" y="226" class="small">Orchestrates or responds directly</text>
+
+  <rect x="1100" y="255" width="240" height="55" rx="12" class="ok"/>
+  <text x="1120" y="288" class="label">Simple logic</text>
+
+  <rect x="1100" y="320" width="240" height="80" rx="12" class="warn"/>
+  <text x="1120" y="350" class="label">Complex logic</text>
+  <text x="1120" y="372" class="small">Invoke Step Functions (JSONata)</text>
+  <text x="1120" y="392" class="small">Fan-out to services + data stores</text>
+
+  <!-- Core request path arrows -->
+  <path d="M 360 320 L 440 320" class="arrow" marker-end="url(#arrowHead)"/>
+  <path d="M 700 205 L 780 205" class="arrow" marker-end="url(#arrowHead)"/>
+  <path d="M 1020 205 L 1100 205" class="arrow" marker-end="url(#arrowHead)"/>
+  <path d="M 730 320 L 780 320" class="arrow dashed" marker-end="url(#arrowHead)"/>
+
+  <!-- UI to Gateway arrow -->
+  <path d="M 360 320 L 780 220" class="arrow" marker-end="url(#arrowHead)"/>
+
+  <!-- Step Functions + downstream -->
+  <rect x="70" y="490" width="420" height="230" rx="14" class="accent2"/>
+  <text x="90" y="522" class="label">Step Functions (JSONata orchestration)</text>
+  <text x="90" y="546" class="small">Workflow states: Interaction / Prescriptions / Orders / Submissions</text>
+  <text x="90" y="568" class="small">Routing, retries, branching, payload transforms</text>
+
+  <rect x="90" y="590" width="180" height="55" rx="12" class="box"/>
+  <text x="105" y="623" class="label">Common API Lambda</text>
+
+  <rect x="290" y="590" width="180" height="55" rx="12" class="box"/>
+  <text x="305" y="623" class="label">Service Lambdas</text>
+  <text x="305" y="642" class="small">domain-specific logic</text>
+
+  <!-- Data layer -->
+  <rect x="520" y="490" width="400" height="230" rx="14" class="layer"/>
+  <text x="540" y="522" class="label">Data Layer</text>
+
+  <rect x="540" y="550" width="170" height="60" rx="12" class="box"/>
+  <text x="555" y="585" class="label">DynamoDB</text>
+  <text x="555" y="604" class="small">state / config / errors</text>
+
+  <rect x="730" y="550" width="170" height="60" rx="12" class="box"/>
+  <text x="745" y="585" class="label">Parameter Store</text>
+  <text x="745" y="604" class="small">secure config</text>
+
+  <rect x="540" y="625" width="170" height="70" rx="12" class="box"/>
+  <text x="555" y="658" class="label">Redis / Cache</text>
+  <text x="555" y="678" class="small">response caching</text>
+
+  <rect x="730" y="625" width="170" height="70" rx="12" class="box"/>
+  <text x="745" y="658" class="label">MongoDB / DB2</text>
+  <text x="745" y="678" class="small">transactional + config data</text>
+
+  <!-- Mongo CRUD Lambda -->
+  <rect x="950" y="490" width="420" height="120" rx="14" class="layer"/>
+  <text x="970" y="522" class="label">MongoDB Access</text>
+  <rect x="970" y="545" width="380" height="55" rx="12" class="box"/>
+  <text x="990" y="578" class="label">Mongo CRUD Lambda</text>
+  <text x="990" y="597" class="small">connects to MongoDB and performs CRUD operations</text>
+
+  <!-- Analytics -->
+  <rect x="950" y="630" width="420" height="130" rx="14" class="layer"/>
+  <text x="970" y="662" class="label">Analytics & Reporting</text>
+  <rect x="970" y="680" width="185" height="60" rx="12" class="box"/>
+  <text x="985" y="715" class="label">Databricks / S3</text>
+  <text x="985" y="734" class="small">data lake</text>
+  <rect x="1165" y="680" width="185" height="60" rx="12" class="box"/>
+  <text x="1180" y="715" class="label">Spark Jobs</text>
+  <text x="1180" y="734" class="small">processing + analytics</text>
+
+  <!-- Monitoring + Security -->
+  <rect x="520" y="730" width="850" height="70" rx="14" class="warn"/>
+  <text x="540" y="760" class="label">Monitoring & Security (cross-cutting)</text>
+  <text x="540" y="782" class="small">IAM / KMS / Secrets Manager / CloudWatch / Dynatrace / Splunk</text>
+
+  <!-- Connections: BFF to Step Functions / direct -->
+  <path d="M 1100 360 L 490 540" class="arrow" marker-end="url(#arrowHead)"/>
+  <path d="M 1100 282 L 920 282" class="arrow dashed" marker-end="url(#arrowHead)"/>
+  <text x="920" y="270" class="small">direct response</text>
+
+  <!-- Step Functions to data/services -->
+  <path d="M 490 600 L 520 580" class="arrow" marker-end="url(#arrowHead)"/>
+  <path d="M 490 615 L 520 655" class="arrow" marker-end="url(#arrowHead)"/>
+  <path d="M 270 618 L 520 580" class="arrow dashed" marker-end="url(#arrowHead)"/>
+  <path d="M 470 618 L 730 580" class="arrow dashed" marker-end="url(#arrowHead)"/>
+  <path d="M 490 585 L 950 570" class="arrow dashed" marker-end="url(#arrowHead)"/>
+  <path d="M 490 560 L 970 712" class="arrow dashed" marker-end="url(#arrowHead)"/>
+
+  <!-- Footer note -->
+  <text x="40" y="806" class="subtitle">Note: This is a conceptual diagram (not tied to exact AWS account boundaries or VPC routing).</text>
+</svg>

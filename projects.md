@@ -83,16 +83,19 @@ A **bug tracking system** to log, triage, and resolve defects—and reduce recur
 At **Cigna (Evernorth / Accredo)**, I build and operate a **cloud-native orchestration platform** for specialty pharmacy workflows.
 
 ### Tech Stack
-AWS Step Functions, Lambda (Golang, Java, Node.js), EKS, DynamoDB, MongoDB, S3, Terraform, CloudWatch, Splunk
+AWS API Gateway, Lambda (Golang, Java, Node.js), Step Functions (JSONata), EKS, DynamoDB, MongoDB, DB2, Redis, S3, SSM Parameter Store, Secrets Manager, IAM/KMS, Terraform, CloudWatch, Dynatrace, Splunk
 
 ### What It Does
-- Develops **product APIs** that expose specialty pharmacy capabilities to internal and partner systems
-- Built a **common API Lambda layer** used by many workflows: Parameter Store for API config, DynamoDB for custom error messages, exception handling, multi-host and optional per-API auth, all content types, S3 for responses >256 KB, and custom response-type handling
-- Orchestrates distributed, asynchronous workflows (e.g., patient data & prescriptions, order scheduling, drug substitution, refills, onboarding)
+- Exposes **product APIs** behind an **API Gateway (HS Gateway)** for internal and partner consumers
+- Implements a **Gateway Lambda (BFF)** behind the gateway:
+  - If logic is simple, the Gateway Lambda **returns the response directly** to the UI
+  - If logic is complex, it starts **Step Functions** workflows that orchestrate multiple downstream calls using **JSONata** transformations and branching
+- Built a **common API Lambda layer** used by workflows and services: Parameter Store for API config, DynamoDB-driven custom error messages, exception handling, multi-host and optional per-API auth, all content types, S3 offload for responses >256 KB, and custom response-type handling
+- Uses service Lambdas + data stores to support workflows like patient data & prescriptions, order scheduling, drug substitution, refills, onboarding
+- Uses a dedicated Lambda for **MongoDB CRUD** (connects to MongoDB and performs create/read/update/delete operations)
 - Runs containerized services on **Amazon EKS** for workloads that need Kubernetes orchestration
-- Transforms payloads with JSONata inside workflows
 - Manages multi-environment infrastructure via Terraform
-- Monitors and debugs with CloudWatch and Splunk
+- Monitors and debugs with CloudWatch, Dynatrace, and Splunk
 - Uses **AI-assisted development tools** (e.g., Copilot, Cursor) to speed up implementation and refactoring while keeping quality high
 - Enabled **automatic GitHub Copilot review on every PR**, with custom instructions for consistent, faster code reviews
 
@@ -102,8 +105,19 @@ AWS Step Functions, Lambda (Golang, Java, Node.js), EKS, DynamoDB, MongoDB, S3, 
 - **End-to-end ownership:** Design, implementation, and operations
 - **Velocity:** AI tools used thoughtfully to deliver faster without sacrificing standards
 
-### Workflow Overview
-![AWS Step Functions flow](/assets/images/aws-step-functions-flow.png)
+### Architecture Overview
+![UI → API Gateway → Gateway Lambda (BFF) → Step Functions / Services](/assets/images/hs-architecture.svg)
+
+**High-level layers**
+1. **User Interaction Layer:** Users/Patients, Workspace/CRM Portal (login, scheduling, verification)
+2. **Integration & Communication:** Outbound/Inbound communication (Genesys, PCAS), event handlers / screen pop
+3. **Frontend Delivery:** CloudFront/S3 for static modules, user version/config management
+4. **API Gateway Layer:** HS Gateway (API Gateway) routing to backend endpoints (Person, Prescription, Encounter, Order, etc.)
+5. **Backend Services:** Gateway Lambda (BFF) and (as needed) Step Functions with JSONata; shared Common API Lambda; Parameter Store; DynamoDB
+6. **Data Layer:** MongoDB/DB2 for transactional/config data, Redis cache for performance
+7. **Analytics & Reporting:** Databricks/S3 data lake and Spark jobs
+8. **Monitoring & Security:** IAM/KMS/Secrets Manager, CloudWatch/Dynatrace/Splunk
+9. **External Integrations:** Okta for identity/access; legacy event systems
 
 ---
 

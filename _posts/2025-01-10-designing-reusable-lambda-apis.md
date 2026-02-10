@@ -28,7 +28,7 @@ A single Lambda (or a small set) that **routes and invokes** based on input keep
 - **API-level custom authentication (optional)** — Some integrations use different auth (e.g., API keys, custom headers); the layer supports optional per-API auth.
 - **URL encoding** — Request params and paths are correctly encoded for each downstream.
 - **All content types** — For XML and JSON, the layer parses and returns **JSON**; for other content types it returns a **string**, so Step Functions always get a consistent shape and stay within payload limits when possible.
-- **Large responses (>256 KB)** — If the downstream response exceeds the Step Functions state size limit, the layer writes the body to **S3** and returns the **S3 key** so the workflow can pass a reference instead of the raw payload (aligned with [Handling Large Payloads in AWS Step Functions](/2025/02/07/handling-large-payloads-aws-step-functions.html)).
+- **Large responses (>256 KB)** — If the downstream response exceeds the Step Functions state size limit, the layer writes the body to **S3** and returns the **S3 key** so the workflow can pass a reference instead of the raw payload (aligned with [Handling Large Payloads in AWS Step Functions](/2025/07/15/handling-large-payloads-aws-step-functions.html)).
 - **Custom response type** — Handles mismatched headers and bodies (e.g., `Content-Type: application/xml` with a JSON body) so we can force the correct parsing and response type per API.
 
 ## Design principles
@@ -65,8 +65,9 @@ Step Functions (or other Lambdas) can then branch on `success` and use `result` 
 
 ## Implementation sketch
 
-- **Lambda:** Receives `{ "action": "...", "payload": { ... } }`. Uses a config or switch to map `action` to URL, method, and any extra headers. Calls the downstream API, handles retries and errors, returns the standard shape.
-- **Step Functions:** One “Invoke API” state that calls this Lambda; use **Choice** on `success` to decide the next step.
+- **API Gateway → Gateway Lambda (BFF):** UI calls land on API Gateway (HS Gateway) and are routed to a **Gateway Lambda** acting as a backend-for-frontend. For simple endpoints, the Gateway Lambda can validate/compose and return directly.
+- **Step Functions (complex flows):** For workflows with more logic (multiple service calls, branching, retries), the Gateway Lambda starts a **Step Functions** execution and relies on JSONata to transform payloads and drive decisions.
+- **Common API Lambda:** Step Functions use one “Invoke API” state that calls a reusable **common API Lambda** with `{ "action": "...", "payload": { ... } }`. The Lambda maps `action` → URL/method/auth, calls the downstream API, handles retries/errors, and returns a standard response shape (or an S3 reference for large payloads).
 - **New integrations:** Add a new action and mapping in the layer instead of changing every workflow.
 
 ## Benefits
