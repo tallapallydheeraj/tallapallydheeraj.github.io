@@ -11,7 +11,7 @@ Austin, TX
 
 ## Professional Summary
 
-Software Engineer with a Master’s degree in Computer Science and hands-on experience building **scalable backend systems**, **cloud-native applications**, and **full-stack platforms**. Strong background in **AWS serverless architecture, API development, and microservices**, with professional experience using **Golang, Java, Spring Boot, and React**.
+Software Engineer with a Master’s degree in Computer Science and hands-on experience building **scalable backend systems**, **cloud-native applications**, and **full-stack platforms**. Strong background in **AWS serverless architecture, API development, and microservices**, with professional experience using **Golang, Java, Spring Boot, Node.js and React**.
 
 Known for designing clean system architectures, improving performance through caching and database optimization, and collaborating effectively in agile environments to deliver reliable, production-ready software.
 
