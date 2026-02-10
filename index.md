@@ -1,75 +1,68 @@
 # Dheeraj Tallapally
 
-## Software Engineer | Cloud & Backend Systems
+## Software Engineer — Backend & Cloud Systems
 
-Hi 👋 I’m **Dheeraj Tallapally**, a Software Engineer based in **Austin, TX**, specializing in **cloud-native backend systems**, **API design**, and **scalable full‑stack applications**.
+I am a **Software Engineer based in Austin, TX**, specializing in
+**cloud-native backend systems and distributed workflows**.
 
-I currently work at **Cigna Health Group**, building production-grade systems using **AWS serverless architecture, Golang, Java, and Terraform**. I enjoy solving problems that sit at the intersection of **distributed systems, performance, and developer experience**.
+I currently work at **Cigna (Evernorth / Accredo Specialty Pharmacy)**, building
+and operating **AWS-based serverless systems** that orchestrate critical healthcare
+operations such as prescription processing, onboarding, prior authorization, and
+medication refills.
 
----
-
-## 🚀 What I Do Best
-
-* Design and build **scalable backend services** and REST APIs
-* Architect **AWS serverless workflows** using Lambda & Step Functions
-* Optimize databases and caching layers for performance
-* Build clean, maintainable systems with strong API contracts
-* Collaborate in agile teams to ship reliable software
+I enjoy working on problems where **scale, correctness, and reliability** matter
+as much as feature delivery.
 
 ---
 
-## 🧠 Core Technologies
+## What I Work On
 
-**Backend & Cloud**
-Golang, Java, Spring Boot, Node.js, AWS (Lambda, Step Functions, S3, DynamoDB, EKS), Terraform
-
-**Frontend**
-React, Angular, TypeScript, Tailwind CSS
-
-**Data & Messaging**
-MySQL, PostgreSQL, MongoDB, Redis, Kafka
-
-**DevOps & Tooling**
-Docker, Kubernetes, Jenkins, GitHub
+- Distributed, event-driven backend systems
+- AWS serverless architectures (Lambda + Step Functions)
+- API design and orchestration
+- Workflow automation in complex business domains
+- Data modeling and performance optimization
 
 ---
 
-## 📌 Featured Projects
+## Technical Focus
 
-### 📈 Trade System — Stock Order Management
+**Cloud & Backend**  
+AWS Lambda, Step Functions, DynamoDB, S3, IAM, EKS, Golang, Java, Spring Boot, Node.js
 
-A full‑stack trading platform designed to execute stock orders precisely based on real‑time price and quantity.
+**Data & Messaging**  
+MongoDB, MySQL, PostgreSQL, Redis, Kafka
 
-* Spring Boot backend with Angular frontend
-* Real‑time analytical dashboards
-* Optimized SQL queries and transaction flows
+**Frontend & Integration**  
+React, Angular, REST APIs
 
-👉 See full details on the **Projects** page
-
----
-
-### 🐞 Bug Tracking System
-
-A secure, role‑based bug tracking platform for managing software defects across products and teams.
-
-* Spring Boot + React + MySQL
-* Role‑Based Access Control (RBAC)
-* Dynamic forms, validations, and file attachments
-
-👉 See full details on the **Projects** page
+**Infrastructure**  
+Terraform, Docker, Kubernetes
 
 ---
 
-## 📄 Resume
+## Selected Projects
 
-You can view my full professional experience, education, and skills on the **Resume** page.
+### Trade System — Stock Order Management
+A full-stack trading platform emphasizing correctness, transactional safety,
+and real-time analytics.
+
+### Bug Tracking System — Secure Issue Management
+A role-based web platform supporting structured workflows, validations,
+and scalable relational data models.
+
+👉 Visit the **Projects** page for architectural details.
 
 ---
 
-## 📫 Let’s Connect
+## Resume
 
-* 📧 **Email:** [tallapallydheeraj99@gmail.com](mailto:tallapallydheeraj99@gmail.com)
-* 🔗 **LinkedIn:** [linkedin.com/in/tallapally-dheeraj](https://linkedin.com/in/tallapally-dheeraj)
-* 🧑‍💻 **GitHub:** [github.com/tallapallydheeraj](https://github.com/tallapallydheeraj)
+A detailed overview of my professional experience, responsibilities,
+and technical impact is available on the **Resume** page.
 
-Thanks for stopping by — feel free to explore my work!
+---
+
+## Contact
+
+📧 tallapallydheeraj99@gmail.com  
+🔗 [LinkedIn](https://linkedin.com/in/tallapally-dheeraj)
