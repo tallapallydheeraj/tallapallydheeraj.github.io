@@ -7,7 +7,7 @@ author: Dheeraj Tallapally
 email: tallapallydheeraj99@gmail.com
 location: Austin, TX
 
-url: "https://github.com/tallapallydheeraj"
+url: "https://tallapallydheeraj.github.io"
 baseurl: ""
 
 theme: minima
@@ -25,6 +25,11 @@ defaults:
       type: posts
     values:
       permalink: /:year/:month/:day/:title.html
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
 
 plugins:
   - jekyll-feed

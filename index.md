@@ -20,9 +20,10 @@ as much as feature delivery.
 
 - Distributed, event-driven backend systems
 - AWS serverless and containerized workloads (Lambda, Step Functions, EKS)
-- API design and orchestration (Golang, Java, Node.js)
+- API design and orchestration (Golang, Java, Node.js, Python)
 - Workflow automation in complex business domains
 - Data modeling and performance optimization
+- Data science and machine learning (sentiment analysis, NLP)
 - AI-assisted development for faster, quality-focused delivery
 
 ---
@@ -30,10 +31,13 @@ as much as feature delivery.
 ## Technical Focus
 
 **Cloud & Backend**  
-AWS Lambda, Step Functions, EKS, DynamoDB, S3, IAM, Golang, Java, Node.js, Spring Boot
+AWS Lambda, Step Functions, EKS, DynamoDB, S3, IAM, Golang, Java, Node.js, Python, Spring Boot
 
 **Data & Messaging**  
-MongoDB, MySQL, PostgreSQL, Redis, Kafka
+MongoDB, MySQL, PostgreSQL, Redis, Kafka, SQLite
+
+**Data Science & ML**  
+Python, Jupyter Notebooks, Sentiment Analysis, NLP
 
 **Frontend & Integration**  
 React, Angular, REST APIs
@@ -53,6 +57,15 @@ UPI-like payments with overdraft and SDN list checks for compliance.
 
 ### BugHound — Bug Tracking System
 Role-based bug tracking with workflows, validations, and scalable data models.
+
+### Hospital Appointment System
+Python-based appointment management platform for healthcare facilities with SQLite persistence.
+
+### Sentiment Analysis
+Machine learning project analyzing Twitter datasets using NLP and sentiment classification.
+
+### Library Management System
+Java application for managing library operations, books, members, and transactions.
 
 👉 Visit the **Projects** page for details and GitHub links.
 

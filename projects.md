@@ -121,15 +121,87 @@ AWS API Gateway, Lambda (Golang, Java, Node.js), Step Functions (JSONata), EKS, 
 
 ---
 
+## 5. Hospital Appointment System — Appointment Management Platform
+
+**Repository:** [github.com/tallapallydheeraj/Hospital-Appointment](https://github.com/tallapallydheeraj/Hospital-Appointment)
+
+A **Python-based hospital appointment management system** that simulates appointment booking workflows, patient scheduling, and administrative operations for healthcare facilities.
+
+### Tech Stack
+**Backend:** Python 3 · **Data:** SQLite database
+
+### What It Does
+- Manages patient appointments with scheduling and booking capabilities
+- Handles patient records and appointment history
+- Provides administrative functions for appointment management
+- Stores and retrieves appointment data using SQLite database
+
+### Why It Matters
+- **Domain knowledge:** Healthcare operations and appointment workflows
+- **Data persistence:** SQLite database integration for reliable data storage
+- **Python proficiency:** Demonstrates backend development with Python
+- **Real-world application:** Practical system for healthcare appointment management
+
+---
+
+## 6. Sentiment Analysis — Twitter Dataset Analysis
+
+**Repository:** [github.com/tallapallydheeraj/Sentiment-Analysis](https://github.com/tallapallydheeraj/Sentiment-Analysis)
+
+A **machine learning project** that performs sentiment analysis on Twitter datasets, classifying tweets as positive, negative, or neutral using data science and NLP techniques.
+
+### Tech Stack
+**Language:** Python · **Tools:** Jupyter Notebook · **Data:** CSV datasets (train/test tweets)
+
+### What It Does
+- Analyzes Twitter data to determine sentiment (positive, negative, neutral)
+- Processes and preprocesses tweet data for machine learning
+- Implements sentiment classification models
+- Evaluates model performance on test datasets
+
+### Why It Matters
+- **Data science:** Machine learning and NLP application
+- **Research:** Survey-level analysis of sentiment analysis techniques
+- **Python ecosystem:** Jupyter Notebooks for exploratory data analysis
+- **ML pipeline:** Data preprocessing, model training, and evaluation
+
+---
+
+## 7. Library Management System — Java Application
+
+**Repository:** [github.com/tallapallydheeraj/Library-Management-System](https://github.com/tallapallydheeraj/Library-Management-System)
+
+A **Java-based library management application** for managing books, members, borrowing, and returns in a library system.
+
+### Tech Stack
+**Backend:** Java
+
+### What It Does
+- Manages library inventory (books, authors, categories)
+- Handles member registration and management
+- Tracks book borrowing and return operations
+- Maintains records of library transactions
+
+### Why It Matters
+- **Java expertise:** Object-oriented design and Java application development
+- **System design:** Complete application lifecycle from design to implementation
+- **Data management:** Efficient handling of library operations and records
+- **Full application:** End-to-end system demonstrating software engineering principles
+
+---
+
 ## What These Projects Show
 
 | Area | Demonstrated In |
 |------|------------------|
-| **Backend & APIs** | Trade System, Payment Project, BugHound, Cigna platform |
+| **Backend & APIs** | Trade System, Payment Project, BugHound, Hospital Appointment, Library Management System, Cigna platform |
 | **Full-stack** | Trade System, Payment Project, BugHound |
-| **Data & correctness** | Order matching, payments, bug lifecycle, workflow state |
+| **Data & correctness** | Order matching, payments, bug lifecycle, workflow state, appointment scheduling, library operations |
 | **Security & compliance** | SDN checks, RBAC, validation, auditability |
 | **Cloud & scale** | AWS serverless, EKS, Terraform, observability |
+| **Data Science & ML** | Sentiment Analysis (NLP, machine learning, data analysis) |
+| **Python development** | Hospital Appointment, Sentiment Analysis |
+| **Java development** | Trade System, Payment Project, BugHound, Library Management System |
 | **AI-assisted dev** | Cigna platform (faster delivery, quality-focused) |
 
 ---

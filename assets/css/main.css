@@ -1,0 +1,382 @@
+/* Modern Portfolio Styling - Recruiter-Friendly Design */
+
+:root {
+  --primary-color: #2563eb;
+  --primary-dark: #1e40af;
+  --secondary-color: #64748b;
+  --accent-color: #0ea5e9;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --border-color: #e2e8f0;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --radius: 8px;
+}
+
+/* Global Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.7;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
+
+/* Header & Navigation */
+.site-header {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  color: white;
+  padding: 1.5rem 0;
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+}
+
+.site-title:hover {
+  opacity: 0.9;
+}
+
+.site-nav {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+  padding: 0.5rem 0;
+}
+
+.site-nav a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Main Content */
+.page-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* Hero Section */
+.page-content > h1:first-child,
+.page-content > h2:first-child {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+  margin-top: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-top: 2rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--text-secondary);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.75rem;
+  color: var(--text-secondary);
+}
+
+/* Code Blocks */
+pre {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 1rem;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+code {
+  background-color: var(--bg-secondary);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+tr:hover {
+  background-color: var(--bg-secondary);
+}
+
+/* Cards & Sections */
+.page-content > hr {
+  border: none;
+  border-top: 2px solid var(--border-color);
+  margin: 3rem 0;
+}
+
+/* Project Cards Style */
+h3 + p {
+  margin-top: 0.5rem;
+}
+
+/* Links in content */
+.page-content a[href^="http"] {
+  font-weight: 500;
+  border-bottom: 1px dotted var(--primary-color);
+}
+
+.page-content a[href^="http"]:hover {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  padding: 2rem 0;
+  margin-top: 4rem;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .site-header .wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .site-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .page-content {
+    padding: 2rem 1rem;
+  }
+  
+  .page-content > h1:first-child,
+  .page-content > h2:first-child {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  table {
+    font-size: 0.9rem;
+  }
+  
+  th, td {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .site-header {
+    position: static;
+  }
+  
+  .site-nav {
+    display: none;
+  }
+}
+
+/* Accessibility */
+:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced Readability */
+.page-content {
+  font-size: 1.1rem;
+}
+
+strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Badge/Tag Style for Tech Stack */
+.page-content strong {
+  display: inline-block;
+  background-color: var(--bg-secondary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin: 0.125rem;
+}
+
+/* Project Section Enhancements */
+.page-content h2 + p {
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+/* Repository Links */
+.page-content a[href*="github.com"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.page-content a[href*="github.com"]:hover {
+  color: var(--primary-dark);
+}
+
+/* Tech Stack Lists */
+.page-content h3 + ul,
+.page-content h3 + ol {
+  background-color: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border-left: 4px solid var(--primary-color);
+  margin-top: 1rem;
+}
+
+/* Image Enhancements */
+.page-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  margin: 1.5rem 0;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  color: var(--text-secondary);
+  font-style: italic;
+  background-color: var(--bg-secondary);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius);
+}
+
+/* Horizontal Rules */
+hr {
+  border: none;
+  border-top: 2px solid var(--border-color);
+  margin: 3rem 0;
+}
+
+/* Contact Section */
+.page-content p:has(a[href^="mailto:"]) {
+  font-size: 1.1rem;
+  padding: 1rem;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+/* Enhanced Readability for Long Content */
+.page-content {
+  max-width: 900px;
+  line-height: 1.8;
+}
+
+/* Better Spacing */
+.page-content > * + * {
+  margin-top: 1rem;
+}
+
+.page-content > h2 + * {
+  margin-top: 1.5rem;
+}
+
+/* Smooth Transitions */
+a, button {
+  transition: all 0.2s ease-in-out;
+}

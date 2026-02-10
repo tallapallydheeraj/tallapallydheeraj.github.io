@@ -18,7 +18,9 @@ production environments.
 
 Strong background in **AWS serverless architecture, workflow orchestration,
 API development, and microservices**, with hands-on experience using
-**Golang, Java, Node.js, and Terraform**.
+**Golang, Java, Node.js, Python, and Terraform**. Additional expertise in
+**data science and machine learning**, including sentiment analysis and NLP
+projects.
 
 ---
 
@@ -95,6 +97,7 @@ Aug 2022 – May 2024
 **Languages:** Java, Golang, Node.js, Python, JavaScript, TypeScript, SQL  
 **Cloud:** AWS (Lambda, Step Functions, EKS, DynamoDB, S3, IAM, CloudWatch), Azure Cloud  
 **Frameworks:** Spring Boot, React, Angular  
-**Data:** MySQL, PostgreSQL, MongoDB, Redis, Kafka  
+**Data:** MySQL, PostgreSQL, MongoDB, Redis, Kafka, SQLite  
+**Data Science & ML:** Jupyter Notebooks, Sentiment Analysis, NLP  
 **Infra:** Terraform, Docker, Kubernetes  
 **Practices:** Microservices, REST APIs, Distributed Systems, Agile, AI-assisted development

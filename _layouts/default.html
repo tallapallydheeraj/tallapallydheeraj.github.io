@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {%- seo -%}
+    {%- include head-custom.html -%}
+    {%- feed_meta -%}
+  </head>
+
+  <body>
+    <header class="site-header" role="banner">
+      <div class="wrapper">
+        <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+        <nav class="site-nav">
+          {%- for path in site.header_pages -%}
+            {%- assign my_page = site.pages | where: "path", path | first -%}
+            {%- if my_page.title -%}
+              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            {%- endif -%}
+          {%- endfor -%}
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrapper">
+        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author | escape }}. All rights reserved.</p>
+        <p>
+          <a href="mailto:{{ site.email }}">📧 {{ site.email }}</a> |
+          <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener">LinkedIn</a> |
+          <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
