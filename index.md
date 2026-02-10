@@ -1,5 +1,5 @@
 ---
-title: Home
+layout: page
 ---
 
 ## Software Engineer — Backend & Cloud Systems

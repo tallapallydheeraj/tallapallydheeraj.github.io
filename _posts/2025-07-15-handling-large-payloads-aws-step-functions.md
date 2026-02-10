@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Handling Large Payloads in AWS Step Functions"
-date: 2025-02-07 10:00:00 -0600
+date: 2025-07-15 10:00:00 -0600
 categories: engineering aws serverless
 ---
 
@@ -44,7 +44,7 @@ For large batches:
 
 - Store large data in S3/DynamoDB; pass keys/IDs through the workflow.
 - Design each state’s output to be minimal.
-- Use **ResultPath** and **Parameters** to avoid copying the whole input into the output.
+- Use **State Result** and **Variables** to avoid copying the whole input into the output.
 - Monitor state payload sizes in CloudWatch or X-Ray if you’re close to the limit.
 
 Doing this keeps workflows within limits, reduces cost, and makes debugging easier because state data stays small and readable.

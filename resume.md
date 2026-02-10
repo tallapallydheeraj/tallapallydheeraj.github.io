@@ -18,7 +18,7 @@ production environments.
 
 Strong background in **AWS serverless architecture, workflow orchestration,
 API development, and microservices**, with hands-on experience using
-**Golang, Java, Spring Boot, and Terraform**.
+**Golang, Java, Node.js, and Terraform**.
 
 ---
 
@@ -31,7 +31,7 @@ API development, and microservices**, with hands-on experience using
 platform** modernizing specialty pharmacy workflows for patients with complex
 and chronic conditions.
 - Develop **serverless microservices using AWS Lambda (Golang, Java, Node.js)** to
-handle **patient data and prescription lifecycle**, **order scheduling for prescriptions**, **drug substitution** (complex clinical logic), onboarding, and medication refills.
+handle **patient data and prescription lifecycle**, **order scheduling for prescriptions**, **drug substitution** (complex logic for determining the eligibility for substitution), onboarding, and medication refills.
 - Design and maintain **AWS Step Functions–based distributed workflows** to
 coordinate asynchronous services with retries, state management, and
 failure handling.
@@ -93,7 +93,7 @@ Aug 2022 – May 2024
 ## Technical Skills
 
 **Languages:** Java, Golang, Node.js, Python, JavaScript, TypeScript, SQL  
-**Cloud:** AWS (Lambda, Step Functions, EKS, DynamoDB, S3, IAM), Azure  
+**Cloud:** AWS (Lambda, Step Functions, EKS, DynamoDB, S3, IAM, CloudWatch), Azure Cloud 
 **Frameworks:** Spring Boot, React, Angular  
 **Data:** MySQL, PostgreSQL, MongoDB, Redis, Kafka  
 **Infra:** Terraform, Docker, Kubernetes  

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Designing Reusable Lambda APIs"
-date: 2025-02-08 10:00:00 -0600
+date: 2025-01-10 10:00:00 -0600
 categories: engineering aws serverless api
 ---
 
