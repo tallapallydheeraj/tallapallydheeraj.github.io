@@ -1,38 +1,40 @@
 /* Modern Portfolio Styling - Recruiter-Friendly Design */
 
 :root {
-  --primary-color: #2563eb;
+  --primary-color: #1e3a8a;
   --primary-dark: #1e40af;
-  --secondary-color: #64748b;
-  --accent-color: #0ea5e9;
-  --text-primary: #1e293b;
-  --text-secondary: #64748b;
+  --secondary-color: #475569;
+  --accent-color: #334155;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
   --bg-primary: #ffffff;
-  --bg-secondary: #f8fafc;
-  --border-color: #e2e8f0;
+  --bg-secondary: #f1f5f9;
+  --border-color: #cbd5e1;
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
-  --radius: 8px;
+  --shadow-md: 0 2px 4px -1px rgb(0 0 0 / 0.08);
+  --shadow-lg: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --radius: 4px;
 }
 
 /* Global Styles */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.7;
   color: var(--text-primary);
   background-color: var(--bg-primary);
+  font-size: 16px;
 }
 
 /* Header & Navigation */
 .site-header {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  background-color: var(--primary-color);
   color: white;
-  padding: 1.5rem 0;
-  box-shadow: var(--shadow-md);
+  padding: 1.25rem 0;
+  box-shadow: var(--shadow-sm);
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 2px solid var(--primary-dark);
 }
 
 .site-header .wrapper {
@@ -45,11 +47,12 @@ body {
 }
 
 .site-title {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.4rem;
+  font-weight: 600;
   margin: 0;
   color: white;
   text-decoration: none;
+  letter-spacing: 0.5px;
 }
 
 .site-title:hover {
@@ -70,10 +73,11 @@ body {
   font-weight: 500;
   transition: opacity 0.2s;
   padding: 0.5rem 0;
+  font-size: 0.95rem;
 }
 
 .site-nav a:hover {
-  opacity: 0.8;
+  opacity: 0.85;
   text-decoration: underline;
 }
 
@@ -87,11 +91,12 @@ body {
 /* Hero Section */
 .page-content > h1:first-child,
 .page-content > h2:first-child {
-  font-size: 2.5rem;
-  font-weight: 800;
+  font-size: 2.25rem;
+  font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 1rem;
-  line-height: 1.2;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
 }
 
 /* Typography */
@@ -103,16 +108,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 2rem;
-  border-bottom: 3px solid var(--primary-color);
+  font-size: 1.75rem;
+  border-bottom: 2px solid var(--primary-color);
   padding-bottom: 0.5rem;
   margin-top: 3rem;
+  font-weight: 600;
+  letter-spacing: -0.3px;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   color: var(--primary-color);
   margin-top: 2rem;
+  font-weight: 600;
 }
 
 p {
@@ -146,7 +154,6 @@ li {
 pre {
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius);
   padding: 1rem;
   overflow-x: auto;
   margin-bottom: 1.5rem;
@@ -155,7 +162,7 @@ pre {
 code {
   background-color: var(--bg-secondary);
   padding: 0.2rem 0.4rem;
-  border-radius: 4px;
+  border: 1px solid var(--border-color);
   font-size: 0.9em;
 }
 
@@ -164,26 +171,32 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 2rem;
+  border: 1px solid var(--border-color);
   box-shadow: var(--shadow-sm);
-  border-radius: var(--radius);
-  overflow: hidden;
 }
 
 th {
   background-color: var(--primary-color);
   color: white;
-  padding: 1rem;
+  padding: 0.875rem 1rem;
   text-align: left;
   font-weight: 600;
+  font-size: 0.95rem;
+  border-bottom: 2px solid var(--primary-dark);
 }
 
 td {
-  padding: 1rem;
+  padding: 0.875rem 1rem;
   border-bottom: 1px solid var(--border-color);
+  font-size: 0.95rem;
+}
+
+tr:nth-child(even) {
+  background-color: var(--bg-secondary);
 }
 
 tr:hover {
-  background-color: var(--bg-secondary);
+  background-color: #e2e8f0;
 }
 
 /* Cards & Sections */
@@ -211,11 +224,21 @@ h3 + p {
 /* Footer */
 .site-footer {
   background-color: var(--bg-secondary);
-  border-top: 1px solid var(--border-color);
+  border-top: 2px solid var(--border-color);
   padding: 2rem 0;
   margin-top: 4rem;
   text-align: center;
   color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
 }
 
 /* Responsive Design */
@@ -277,7 +300,7 @@ html {
 
 /* Enhanced Readability */
 .page-content {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 strong {
@@ -287,11 +310,8 @@ strong {
 
 /* Badge/Tag Style for Tech Stack */
 .page-content strong {
-  display: inline-block;
-  background-color: var(--bg-secondary);
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  margin: 0.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
 /* Project Section Enhancements */
@@ -318,31 +338,30 @@ strong {
 .page-content h3 + ul,
 .page-content h3 + ol {
   background-color: var(--bg-secondary);
-  padding: 1.5rem;
-  border-radius: var(--radius);
-  border-left: 4px solid var(--primary-color);
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid var(--primary-color);
   margin-top: 1rem;
+  border-radius: 2px;
 }
 
 /* Image Enhancements */
 .page-content img {
   max-width: 100%;
   height: auto;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
   margin: 1.5rem 0;
 }
 
 /* Blockquotes */
 blockquote {
-  border-left: 4px solid var(--primary-color);
+  border-left: 3px solid var(--primary-color);
   padding-left: 1.5rem;
   margin: 1.5rem 0;
   color: var(--text-secondary);
   font-style: italic;
   background-color: var(--bg-secondary);
   padding: 1rem 1.5rem;
-  border-radius: var(--radius);
 }
 
 /* Horizontal Rules */
@@ -354,10 +373,10 @@ hr {
 
 /* Contact Section */
 .page-content p:has(a[href^="mailto:"]) {
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 1rem;
   background-color: var(--bg-secondary);
-  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
   text-align: center;
 }
 
