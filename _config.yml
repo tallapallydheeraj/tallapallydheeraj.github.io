@@ -1,54 +1,33 @@
-# Site settings
-#title: Dheeraj Tallapally
+title: Dheeraj Tallapally
 description: >
-  Software Engineer specializing in cloud-native systems, backend architecture,
-  and scalable full-stack applications using AWS, Golang, Java, and React.
+  Software Engineer specializing in cloud-native backend systems,
+  distributed workflows, and scalable full-stack applications.
 author: Dheeraj Tallapally
 email: tallapallydheeraj99@gmail.com
 location: Austin, TX
 
-# URL settings
-url: "https://tallapallydheeraj.github.io"
-baseurl: "" # leave empty for user.github.io repos
+url: "https://github.com/tallapallydheeraj"
+baseurl: ""
 
-# GitHub Pages theme
 theme: minima
 
-# Social links
 github_username: tallapallydheeraj
 linkedin_username: tallapally-dheeraj
 
-# Build settings
 markdown: kramdown
 highlighter: rouge
 
-# Plugins (GitHub Pages–supported only)
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Navigation (used by minima)
 header_pages:
   - index.md
   - projects.md
   - resume.md
 
-# SEO settings
-twitter:
-  username: ""   # optional
-  card: summary
-
-# Exclude unnecessary files
 exclude:
-  - README.md
-  - node_modules
-  - vendor
   - Gemfile
   - Gemfile.lock
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: page
+  - node_modules
+  - vendor
