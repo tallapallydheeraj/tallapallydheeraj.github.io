@@ -2,7 +2,9 @@
 title: Projects
 ---
 
-Selected work that demonstrates **scalable backend systems, full-stack development, and production-ready design**. Each project includes source code and documentation on GitHub.
+<div class="projects-intro">
+  <p>Selected work that demonstrates <strong>scalable backend systems, full-stack development, and production-ready design</strong>. Each project includes source code and documentation on GitHub.</p>
+</div>
 
 ---
 
