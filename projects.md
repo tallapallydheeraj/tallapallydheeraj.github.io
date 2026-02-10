@@ -1,4 +1,6 @@
-# Projects
+---
+title: Projects
+---
 
 Selected work that demonstrates **scalable backend systems, full-stack development, and production-ready design**. Each project includes source code and documentation on GitHub.
 

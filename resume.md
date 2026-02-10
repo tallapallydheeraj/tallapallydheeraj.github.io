@@ -1,4 +1,6 @@
-# Resume
+---
+title: Resume
+---
 
 ## Dheeraj Tallapally
 Software Engineer — Backend & Cloud Systems  
