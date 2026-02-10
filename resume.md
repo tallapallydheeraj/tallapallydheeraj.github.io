@@ -29,8 +29,7 @@ API development, and microservices**, with hands-on experience using
 platform** modernizing specialty pharmacy workflows for patients with complex
 and chronic conditions.
 - Develop **serverless microservices using AWS Lambda (Golang, Java, Node.js)** to
-handle prescription lifecycle management, onboarding, insurance validation,
-prior authorization, and medication refills.
+handle **patient data and prescription lifecycle**, **order scheduling for prescriptions**, **drug substitution** (complex clinical logic), onboarding, and medication refills.
 - Design and maintain **AWS Step Functions–based distributed workflows** to
 coordinate asynchronous services with retries, state management, and
 failure handling.
@@ -38,14 +37,14 @@ failure handling.
 workloads requiring orchestration and scaling.
 - Design and develop **product APIs** that expose specialty pharmacy capabilities
 to internal and partner systems, with clear contracts, versioning, and documentation.
-- Built a **reusable, generic API Lambda layer** enabling dynamic routing and
-invocation of downstream services, reducing duplicated logic across workflows.
+- Built a **reusable, generic API Lambda layer** with Parameter Store config, DynamoDB-driven error messages, exception handling (including ignoreStatusCode and problem-object wrapping), multi-host and optional per-API auth, all content types (JSON/XML/string), S3 offload for responses >256 KB, and custom response-type handling; reduces duplicated logic across dozens of workflows.
 - Use **JSONata** for runtime payload transformation and conditional branching
 inside workflow executions.
 - Leverage **DynamoDB and MongoDB** for low-latency, schema-flexible data storage
 and **Redis caching** to improve performance.
 - Use **AI-assisted development tools** (e.g., Copilot, Cursor) to accelerate
 implementation, refactoring, and documentation while maintaining code quality.
+- Set up **GitHub Copilot to automatically review every PR**, with custom instructions to make reviews easier and more consistent across the team.
 - Provision and manage infrastructure using **Terraform**, enabling consistent
 deployments across environments.
 - Ensure secure handling of sensitive healthcare data using **IAM, SSM,

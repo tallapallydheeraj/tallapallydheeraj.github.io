@@ -24,6 +24,9 @@ A full-stack **trading application** where buy and sell orders are matched by **
 - **Architecture:** RESTful APIs, layered design, and relational persistence
 - **Observability:** Structured for analytics and real-time dashboards
 
+### Architecture
+![Trade System architecture](/assets/images/trade-system-architecture.png)
+
 ---
 
 ## 2. Payment Project — UPI-Style Application
@@ -68,6 +71,9 @@ A **bug tracking system** to log, triage, and resolve defects—and reduce recur
 - **Scalable data model:** Supports filtering and reporting at scale
 - **Security:** RBAC and validation for data quality and access control
 
+### RBAC Model
+![Bug Tracker RBAC](/assets/images/bug-tracker-rbac.png)
+
 ---
 
 ## 4. Cloud & Serverless Systems (Professional Work)
@@ -79,18 +85,23 @@ AWS Step Functions, Lambda (Golang, Java, Node.js), EKS, DynamoDB, MongoDB, S3, 
 
 ### What It Does
 - Develops **product APIs** that expose specialty pharmacy capabilities to internal and partner systems
-- Orchestrates distributed, asynchronous workflows (e.g., prior auth, refills, onboarding)
+- Built a **common API Lambda layer** used by many workflows: Parameter Store for API config, DynamoDB for custom error messages, exception handling, multi-host and optional per-API auth, all content types, S3 for responses >256 KB, and custom response-type handling
+- Orchestrates distributed, asynchronous workflows (e.g., patient data & prescriptions, order scheduling, drug substitution, refills, onboarding)
 - Runs containerized services on **Amazon EKS** for workloads that need Kubernetes orchestration
 - Transforms payloads with JSONata inside workflows
 - Manages multi-environment infrastructure via Terraform
 - Monitors and debugs with CloudWatch and Splunk
 - Uses **AI-assisted development tools** (e.g., Copilot, Cursor) to speed up implementation and refactoring while keeping quality high
+- Enabled **automatic GitHub Copilot review on every PR**, with custom instructions for consistent, faster code reviews
 
 ### Why It Matters
 - **Production scale:** Critical healthcare operations with correctness and reliability
 - **Modern stack:** Serverless, EKS, event-driven, infrastructure-as-code
 - **End-to-end ownership:** Design, implementation, and operations
 - **Velocity:** AI tools used thoughtfully to deliver faster without sacrificing standards
+
+### Workflow Overview
+![AWS Step Functions flow](/assets/images/aws-step-functions-flow.png)
 
 ---
 

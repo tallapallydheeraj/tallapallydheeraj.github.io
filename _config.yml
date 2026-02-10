@@ -18,6 +18,14 @@ linkedin_username: tallapally-dheeraj
 markdown: kramdown
 highlighter: rouge
 
+# Post URLs: /YYYY/MM/DD/title.html (so Blog page links work)
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      permalink: /:year/:month/:day/:title.html
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -25,6 +33,7 @@ plugins:
 header_pages:
   - index.md
   - projects.md
+  - blog.md
   - resume.md
 
 exclude:

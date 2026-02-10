@@ -9,8 +9,7 @@ I'm **Dheeraj Tallapally**, a Software Engineer based in Austin, TX, specializin
 
 I currently work at **Cigna (Evernorth / Accredo Specialty Pharmacy)**, building
 and operating **AWS-based serverless systems** that orchestrate critical healthcare
-operations such as prescription processing, onboarding, prior authorization, and
-medication refills.
+operations such as **patient data and prescriptions**, **order scheduling for prescriptions**, **drug substitution** (complex clinical logic), onboarding, and medication refills.
 
 I enjoy working on problems where **scale, correctness, and reliability** matter
 as much as feature delivery.
@@ -59,10 +58,11 @@ Role-based bug tracking with workflows, validations, and scalable data models.
 
 ---
 
-## Resume
+## Resume & Blog
 
 A detailed overview of my professional experience, responsibilities,
-and technical impact is available on the **Resume** page.
+and technical impact is on the **Resume** page.  
+Engineering notes on Step Functions, Lambda APIs, and migration patterns are on the **Blog**.
 
 ---
 
