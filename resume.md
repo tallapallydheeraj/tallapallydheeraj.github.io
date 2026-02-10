@@ -93,7 +93,7 @@ Aug 2022 – May 2024
 ## Technical Skills
 
 **Languages:** Java, Golang, Node.js, Python, JavaScript, TypeScript, SQL  
-**Cloud:** AWS (Lambda, Step Functions, EKS, DynamoDB, S3, IAM, CloudWatch), Azure Cloud 
+**Cloud:** AWS (Lambda, Step Functions, EKS, DynamoDB, S3, IAM, CloudWatch), Azure Cloud  
 **Frameworks:** Spring Boot, React, Angular  
 **Data:** MySQL, PostgreSQL, MongoDB, Redis, Kafka  
 **Infra:** Terraform, Docker, Kubernetes  
