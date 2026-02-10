@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="750" viewBox="0 0 1100 750" role="img" aria-label="BugHound RBAC Model: Role-Based Access Control">
+  <defs>
+    <style>
+      .title { font: 700 24px -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; fill: #2c3e50; }
+      .subtitle { font: 500 14px -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; fill: #5d6d7e; }
+      .role-title { font: 700 16px -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; fill: #2c3e50; }
+      .permission { font: 500 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; fill: #34495e; }
+    </style>
+    <marker id="arrowHead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#16a085"/>
+    </marker>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#16a085;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#2c3e50;stop-opacity:0.08" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="750" fill="#ffffff"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1100" height="80" fill="url(#headerGrad)"/>
+  <text x="550" y="35" class="title" text-anchor="middle">BugHound — Role-Based Access Control (RBAC)</text>
+  <text x="550" y="60" class="subtitle" text-anchor="middle">Role Permissions and Access Control Model</text>
+
+  <!-- Central System -->
+  <rect x="400" y="120" width="300" height="120" fill="#ffffff" stroke="#16a085" stroke-width="3" rx="12"/>
+  <text x="550" y="155" class="role-title" text-anchor="middle">Bug Tracking System</text>
+  <text x="550" y="180" class="subtitle" text-anchor="middle">Central Repository</text>
+  <text x="550" y="200" class="permission" text-anchor="middle">Bugs • Products • Releases</text>
+  <text x="550" y="220" class="permission" text-anchor="middle">Workflows • Attachments</text>
+
+  <!-- Role boxes: perfectly centered with equal padding on both sides -->
+  <!-- Container: 1100px wide, 4 boxes of 220px = 880px, remaining 220px for 3 gaps + 2 side paddings = 44px each -->
+  <!-- Start at 44px (44px padding), gaps of 44px -->
+  <!-- Admin Role -->
+  <rect x="44" y="300" width="220" height="180" fill="#fff5f5" stroke="#c62828" stroke-width="2.5" rx="10"/>
+  <circle cx="154" cy="330" r="25" fill="#c62828"/>
+  <text x="154" y="337" class="role-title" fill="white" text-anchor="middle" font-size="18">A</text>
+  <text x="154" y="375" class="role-title" text-anchor="middle">Admin</text>
+  <text x="154" y="400" class="permission" text-anchor="middle">• Full System Access</text>
+  <text x="154" y="420" class="permission" text-anchor="middle">• User Management</text>
+  <text x="154" y="440" class="permission" text-anchor="middle">• Product/Release Mgmt</text>
+  <text x="154" y="460" class="permission" text-anchor="middle">• All Bug Operations</text>
+
+  <!-- Developer Role -->
+  <rect x="308" y="300" width="220" height="180" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2.5" rx="10"/>
+  <circle cx="418" cy="330" r="25" fill="#2e7d32"/>
+  <text x="418" y="337" class="role-title" fill="white" text-anchor="middle" font-size="18">D</text>
+  <text x="418" y="375" class="role-title" text-anchor="middle">Developer</text>
+  <text x="418" y="400" class="permission" text-anchor="middle">• View Assigned Bugs</text>
+  <text x="418" y="420" class="permission" text-anchor="middle">• Update Bug Status</text>
+  <text x="418" y="440" class="permission" text-anchor="middle">• Add Comments</text>
+  <text x="418" y="460" class="permission" text-anchor="middle">• Resolve Bugs</text>
+
+  <!-- Tester Role -->
+  <rect x="572" y="300" width="220" height="180" fill="#e3f2fd" stroke="#1565c0" stroke-width="2.5" rx="10"/>
+  <circle cx="682" cy="330" r="25" fill="#1565c0"/>
+  <text x="682" y="337" class="role-title" fill="white" text-anchor="middle" font-size="18">T</text>
+  <text x="682" y="375" class="role-title" text-anchor="middle">Tester</text>
+  <text x="682" y="400" class="permission" text-anchor="middle">• Create New Bugs</text>
+  <text x="682" y="420" class="permission" text-anchor="middle">• Add Attachments</text>
+  <text x="682" y="440" class="permission" text-anchor="middle">• Update Bug Details</text>
+  <text x="682" y="460" class="permission" text-anchor="middle">• Search &amp; Filter</text>
+
+  <!-- User Role -->
+  <rect x="836" y="300" width="220" height="180" fill="#f3e5f5" stroke="#6a1b9a" stroke-width="2.5" rx="10"/>
+  <circle cx="946" cy="330" r="25" fill="#6a1b9a"/>
+  <text x="946" y="337" class="role-title" fill="white" text-anchor="middle" font-size="18">U</text>
+  <text x="946" y="375" class="role-title" text-anchor="middle">User</text>
+  <text x="946" y="400" class="permission" text-anchor="middle">• View Public Bugs</text>
+  <text x="946" y="420" class="permission" text-anchor="middle">• Read-Only Access</text>
+  <text x="946" y="440" class="permission" text-anchor="middle">• Search Bugs</text>
+  <text x="946" y="460" class="permission" text-anchor="middle">• View Reports</text>
+
+  <!-- Arrows from Roles to System -->
+  <path d="M 264 390 L 400 180" stroke="#16a085" stroke-width="2" fill="none" marker-end="url(#arrowHead)"/>
+  <path d="M 418 390 L 500 180" stroke="#16a085" stroke-width="2" fill="none" marker-end="url(#arrowHead)"/>
+  <path d="M 682 390 L 600 180" stroke="#16a085" stroke-width="2" fill="none" marker-end="url(#arrowHead)"/>
+  <path d="M 836 390 L 700 180" stroke="#16a085" stroke-width="2" fill="none" marker-end="url(#arrowHead)"/>
+
+  <!-- Workflow Section -->
+  <rect x="50" y="530" width="1000" height="180" fill="#f5f6f7" stroke="#16a085" stroke-width="2" rx="12"/>
+  <text x="550" y="560" class="role-title" text-anchor="middle">Bug Lifecycle Workflow</text>
+  
+  <!-- Workflow boxes: perfectly centered with equal padding on both sides -->
+  <!-- Container: 1000px wide, 6 boxes of 140px = 840px, remaining 160px for 5 gaps + 2 side paddings = 23px each (approximately) -->
+  <!-- Start at 73px (23px padding), gaps of 23px -->
+  <rect x="73" y="580" width="140" height="110" fill="#ffffff" stroke="#16a085" stroke-width="2" rx="8"/>
+  <text x="143" y="605" class="permission" text-anchor="middle" font-weight="600">New</text>
+  <circle cx="143" cy="630" r="8" fill="#16a085"/>
+  
+  <path d="M 213 635 L 236 635" stroke="#16a085" stroke-width="2" fill="none" marker-end="url(#arrowHead)"/>
+  
+  <rect x="236" y="580" width="140" height="110" fill="#ffffff" stroke="#16a085" stroke-width="2" rx="8"/>
+  <text x="306" y="605" class="permission" text-anchor="middle" font-weight="600">Assigned</text>
+  <circle cx="306" cy="630" r="8" fill="#16a085"/>
+  
+  <path d="M 376 635 L 399 635" stroke="#16a085" stroke-width="2" fill="none" marker-end="url(#arrowHead)"/>
+  
+  <rect x="399" y="580" width="140" height="110" fill="#ffffff" stroke="#16a085" stroke-width="2" rx="8"/>
+  <text x="469" y="605" class="permission" text-anchor="middle" font-weight="600">In Progress</text>
+  <circle cx="469" cy="630" r="8" fill="#16a085"/>
+  
+  <path d="M 539 635 L 562 635" stroke="#16a085" stroke-width="2" fill="none" marker-end="url(#arrowHead)"/>
+  
+  <rect x="562" y="580" width="140" height="110" fill="#ffffff" stroke="#16a085" stroke-width="2" rx="8"/>
+  <text x="632" y="605" class="permission" text-anchor="middle" font-weight="600">Testing</text>
+  <circle cx="632" cy="630" r="8" fill="#16a085"/>
+  
+  <path d="M 702 635 L 725 635" stroke="#16a085" stroke-width="2" fill="none" marker-end="url(#arrowHead)"/>
+  
+  <rect x="725" y="580" width="140" height="110" fill="#ffffff" stroke="#16a085" stroke-width="2" rx="8"/>
+  <text x="795" y="605" class="permission" text-anchor="middle" font-weight="600">Resolved</text>
+  <circle cx="795" cy="630" r="8" fill="#2c3e50"/>
+  
+  <path d="M 865 635 L 888 635" stroke="#16a085" stroke-width="2" fill="none" marker-end="url(#arrowHead)"/>
+  
+  <rect x="888" y="580" width="140" height="110" fill="#ffffff" stroke="#16a085" stroke-width="2" rx="8"/>
+  <text x="958" y="605" class="permission" text-anchor="middle" font-weight="600">Closed</text>
+  <circle cx="958" cy="630" r="8" fill="#2c3e50"/>
+
+  <!-- Legend -->
+  <rect x="50" y="720" width="1000" height="25" fill="#f5f6f7" stroke="#dee2e6" stroke-width="1" rx="4"/>
+  <!-- Center the legend content: 4 items with ~100px spacing each, centered around x=550 -->
+  <text x="350" y="738" class="permission" font-size="11">Legend:</text>
+  <circle cx="420" cy="733" r="6" fill="#c62828"/>
+  <text x="435" y="738" class="permission" font-size="11">Admin</text>
+  <circle cx="520" cy="733" r="6" fill="#2e7d32"/>
+  <text x="535" y="738" class="permission" font-size="11">Developer</text>
+  <circle cx="640" cy="733" r="6" fill="#1565c0"/>
+  <text x="655" y="738" class="permission" font-size="11">Tester</text>
+  <circle cx="740" cy="733" r="6" fill="#6a1b9a"/>
+  <text x="755" y="738" class="permission" font-size="11">User</text>
+</svg>

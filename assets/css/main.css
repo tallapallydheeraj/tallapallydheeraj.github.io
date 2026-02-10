@@ -13,9 +13,9 @@
   --text-secondary: #34495e;
   --text-muted: #7f8c8d;
   --bg-primary: #ffffff;
-  --bg-secondary: #f8f9fa;
-  --bg-tertiary: #ecf0f1;
-  --bg-accent: #e8f8f5;
+  --bg-secondary: #f5f6f7;
+  --bg-tertiary: #eef0f2;
+  --bg-accent: #ffffff;
   --border-color: #dee2e6;
   --border-light: #e9ecef;
   --shadow-sm: 0 1px 2px 0 rgba(44, 62, 80, 0.05);
@@ -413,7 +413,7 @@ li {
 
 /* Code Blocks */
 pre {
-  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+  background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-left: 4px solid var(--accent-color);
   padding: 1.25rem;
@@ -433,7 +433,7 @@ pre:hover {
 }
 
 code {
-  background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
+  background: var(--bg-secondary);
   padding: 0.25rem 0.5rem;
   border: 1px solid var(--border-color);
   font-size: 0.9em;
@@ -486,7 +486,7 @@ tr {
 }
 
 tr:hover {
-  background-color: var(--bg-accent);
+  background-color: var(--bg-secondary);
   transform: translateX(2px);
   box-shadow: inset 3px 0 0 var(--accent-color);
 }
@@ -521,7 +521,7 @@ h3 + p {
   outline: 2px solid var(--accent-color);
   outline-offset: 2px;
   text-decoration: none;
-  background-color: rgba(22, 160, 133, 0.05);
+  background-color: var(--bg-secondary);
 }
 
 /* Footer */
@@ -886,7 +886,7 @@ strong {
 /* Tech Stack Lists */
 .page-content h3 + ul,
 .page-content h3 + ol {
-  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-accent) 100%);
+  background: var(--bg-primary);
   padding: 1.5rem 2rem;
   border-left: 4px solid;
   border-image: linear-gradient(180deg, var(--accent-color), var(--primary-color)) 1;
@@ -895,6 +895,7 @@ strong {
   border-radius: var(--radius);
   transition: all 0.3s ease;
   box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
   position: relative;
 }
 
@@ -932,10 +933,11 @@ blockquote {
   margin: 1.5rem 0;
   color: var(--text-secondary);
   font-style: italic;
-  background: linear-gradient(135deg, var(--bg-accent) 0%, var(--bg-secondary) 100%);
+  background: var(--bg-primary);
   padding: 1.25rem 1.5rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
   position: relative;
 }
 
@@ -961,7 +963,7 @@ hr {
 .page-content p:has(a[href^="mailto:"]) {
   font-size: 1.05rem;
   padding: 1.5rem;
-  background: linear-gradient(135deg, var(--bg-accent) 0%, var(--bg-secondary) 100%);
+  background: var(--bg-primary);
   border: 1px solid var(--border-color);
   border-left: 4px solid var(--accent-color);
   text-align: center;
@@ -1047,6 +1049,133 @@ pre:hover {
   transform: translateY(-4px) scale(1.01);
   box-shadow: var(--shadow-xl);
   border-color: var(--accent-color);
+}
+
+/* Architecture Diagrams - Enhanced Styling */
+.page-content img[alt*="architecture" i],
+.page-content img[alt*="Architecture" i],
+.page-content img[alt*="RBAC" i],
+.page-content img[alt*="rbac" i] {
+  display: block !important;
+  margin: 3rem auto;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  background: var(--bg-primary);
+  padding: 1.5rem;
+  transition: all 0.4s ease;
+  position: relative;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.page-content img[alt*="architecture" i]:hover,
+.page-content img[alt*="Architecture" i]:hover,
+.page-content img[alt*="RBAC" i]:hover,
+.page-content img[alt*="rbac" i]:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--accent-color);
+  border-width: 3px;
+}
+
+.page-content img[alt*="architecture" i]::before,
+.page-content img[alt*="Architecture" i]::before,
+.page-content img[alt*="RBAC" i]::before,
+.page-content img[alt*="rbac" i]::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-color), var(--primary-color), var(--accent-color));
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.page-content img[alt*="architecture" i]:hover::before,
+.page-content img[alt*="Architecture" i]:hover::before,
+.page-content img[alt*="RBAC" i]:hover::before,
+.page-content img[alt*="rbac" i]:hover::before {
+  opacity: 1;
+}
+
+/* SVG Architecture Diagrams - Special Treatment */
+.page-content img[src*=".svg"],
+.page-content img[alt*="architecture" i][src*=".svg"],
+.page-content img[alt*="Architecture" i][src*=".svg"] {
+  background: var(--bg-secondary);
+  padding: 2rem;
+  border: 2px solid var(--border-color);
+}
+
+/* PNG Architecture Diagrams - Enhanced for Better Visibility */
+.page-content img[src*=".png"][alt*="architecture" i],
+.page-content img[src*=".png"][alt*="Architecture" i],
+.page-content img[src*=".png"][alt*="RBAC" i],
+.page-content img[src*=".png"][alt*="rbac" i] {
+  background: var(--bg-primary);
+  padding: 2rem;
+  filter: contrast(1.05) brightness(1.02);
+  border: 2px solid var(--border-color);
+}
+
+.page-content img[src*=".png"][alt*="architecture" i]:hover,
+.page-content img[src*=".png"][alt*="Architecture" i]:hover,
+.page-content img[src*=".png"][alt*="RBAC" i]:hover,
+.page-content img[src*=".png"][alt*="rbac" i]:hover {
+  filter: contrast(1.1) brightness(1.05);
+}
+
+/* Architecture Diagram Container */
+.architecture-diagram {
+  margin: 3rem 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+
+.architecture-diagram img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: auto;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  background: var(--bg-primary);
+  padding: 2rem;
+  transition: all 0.4s ease;
+}
+
+.architecture-diagram img:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--accent-color);
+  border-width: 3px;
+}
+
+.architecture-diagram::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.architecture-diagram:hover::before {
+  opacity: 1;
 }
 
 /* Section Dividers */
@@ -1142,10 +1271,11 @@ html {
 
 /* Projects Page Enhancements */
 .projects-intro {
-  background: linear-gradient(135deg, var(--bg-accent) 0%, var(--bg-secondary) 100%);
+  background: var(--bg-primary);
   padding: 2rem;
   border-radius: var(--radius);
   border-left: 4px solid var(--accent-color);
+  border: 1px solid var(--border-color);
   margin: 2rem 0;
   box-shadow: var(--shadow-sm);
 }

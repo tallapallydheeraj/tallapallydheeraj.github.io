@@ -29,7 +29,8 @@ A full-stack **trading application** where buy and sell orders are matched by **
 - **Observability:** Structured for analytics and real-time dashboards
 
 ### Architecture
-![Trade System architecture](/assets/images/trade-system-architecture.png)
+
+![Trade System architecture]({{ '/assets/images/trade-system-architecture.svg' | relative_url }})
 
 ---
 
@@ -76,7 +77,8 @@ A **bug tracking system** to log, triage, and resolve defects—and reduce recur
 - **Security:** RBAC and validation for data quality and access control
 
 ### RBAC Model
-![Bug Tracker RBAC](/assets/images/bug-tracker-rbac.png)
+
+![Bug Tracker RBAC]({{ '/assets/images/bug-tracker-rbac.svg' | relative_url }})
 
 ---
 
@@ -108,7 +110,7 @@ AWS API Gateway, Lambda (Golang, Java, Node.js), Step Functions (JSONata), EKS, 
 - **Velocity:** AI tools used thoughtfully to deliver faster without sacrificing standards
 
 ### Architecture Overview
-![UI → API Gateway → Gateway Lambda (BFF) → Step Functions / Services](/assets/images/hs-architecture.svg)
+![UI → API Gateway → Gateway Lambda (BFF) → Step Functions / Services]({{ '/assets/images/hs-architecture.svg' | relative_url }})
 
 **High-level layers**
 1. **User Interaction Layer:** Users/Patients, Workspace/CRM Portal (login, scheduling, verification)
