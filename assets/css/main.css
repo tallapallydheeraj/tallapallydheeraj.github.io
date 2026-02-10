@@ -120,7 +120,8 @@ body {
 }
 
 .site-title:hover::after {
-  width: 100%;
+  width: 0;
+  display: none;
 }
 
 .site-title:hover::before {
@@ -248,7 +249,8 @@ body {
 }
 
 .site-nav a:hover::before {
-  width: 80%;
+  width: 0;
+  display: none;
 }
 
 .site-nav a:active,
@@ -366,16 +368,16 @@ a {
 }
 
 a:hover {
-  color: var(--primary-dark);
-  text-decoration: underline;
+  color: var(--accent-color);
+  text-decoration: none;
 }
 
 a:active,
 a:focus {
-  color: var(--primary-color);
-  outline: 2px solid var(--primary-color);
+  color: var(--accent-color);
+  outline: 2px solid var(--accent-color);
   outline-offset: 2px;
-  text-decoration: underline;
+  text-decoration: none;
   background-color: transparent;
 }
 
@@ -477,29 +479,22 @@ h3 + p {
 /* Links in content */
 .page-content a[href^="http"] {
   font-weight: 600;
-  border-bottom: 2px solid transparent;
-  background: linear-gradient(to bottom, transparent 0%, transparent 100%);
-  background-position: 0 100%;
-  background-size: 100% 2px;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(to bottom, var(--accent-color) 0%, var(--accent-color) 100%);
   transition: all 0.3s ease;
-  padding-bottom: 2px;
 }
 
 .page-content a[href^="http"]:hover {
   color: var(--accent-color);
-  background-size: 100% 2px;
+  text-decoration: none;
   transform: translateY(-1px);
 }
 
 .page-content a[href^="http"]:active,
 .page-content a[href^="http"]:focus {
-  color: var(--primary-color);
-  border-bottom: 1px solid var(--primary-color);
-  outline: 2px solid var(--primary-color);
+  color: var(--accent-color);
+  outline: 2px solid var(--accent-color);
   outline-offset: 2px;
-  background-color: rgba(26, 54, 93, 0.05);
+  text-decoration: none;
+  background-color: rgba(22, 160, 133, 0.05);
 }
 
 /* Footer */
@@ -531,17 +526,42 @@ h3 + p {
   transition: all 0.2s ease;
 }
 
+.site-footer a {
+  position: relative;
+}
+
+.site-footer a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-color), var(--accent-light));
+  transition: width 0.3s ease;
+  border-radius: 1px;
+}
+
 .site-footer a:hover {
-  color: var(--primary-dark);
-  text-decoration: underline;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.site-footer a:hover::after {
+  width: 100%;
 }
 
 .site-footer a:active,
 .site-footer a:focus {
-  color: var(--primary-color);
-  outline: 2px solid var(--primary-color);
+  color: var(--accent-color);
+  outline: 2px solid var(--accent-color);
   outline-offset: 2px;
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.site-footer a:active::after,
+.site-footer a:focus::after {
+  width: 100%;
 }
 
 /* Responsive Design */
