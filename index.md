@@ -21,7 +21,7 @@ I currently work at **Cigna Health Group**, building production-grade systems us
 ## 🧠 Core Technologies
 
 **Backend & Cloud**
-Golang, Java, Spring Boot, AWS (Lambda, Step Functions, S3, DynamoDB), Terraform
+Golang, Java, Spring Boot, Node.js, AWS (Lambda, Step Functions, S3, DynamoDB, EKS), Terraform
 
 **Frontend**
 React, Angular, TypeScript, Tailwind CSS
@@ -30,7 +30,7 @@ React, Angular, TypeScript, Tailwind CSS
 MySQL, PostgreSQL, MongoDB, Redis, Kafka
 
 **DevOps & Tooling**
-Docker, Kubernetes, Jenkins, GitHub, Datadog
+Docker, Kubernetes, Jenkins, GitHub
 
 ---
 
@@ -70,6 +70,6 @@ You can view my full professional experience, education, and skills on the **Res
 
 * 📧 **Email:** [tallapallydheeraj99@gmail.com](mailto:tallapallydheeraj99@gmail.com)
 * 🔗 **LinkedIn:** [linkedin.com/in/tallapally-dheeraj](https://linkedin.com/in/tallapally-dheeraj)
-* 🧑‍💻 **GitHub:** [https://github.com/YOUR_GITHUB_USERNAME](https://github.com/YOUR_GITHUB_USERNAME)
+* 🧑‍💻 **GitHub:** [github.com/tallapallydheeraj](https://github.com/tallapallydheeraj)
 
 Thanks for stopping by — feel free to explore my work!
