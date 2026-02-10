@@ -76,7 +76,7 @@
 
   <!-- Step Functions -->
   <rect x="30" y="400" width="460" height="280" rx="14" class="accent2"/>
-  <text x="50" y="430" class="label">Step Functions (JSONata)</text>
+  <text x="50" y="430" class="label">6) Step Functions (JSONata)</text>
   <text x="50" y="452" class="small">Conditional orchestration · retries · branching</text>
 
   <rect x="60" y="480" width="180" height="55" rx="12" class="box"/>
@@ -87,7 +87,7 @@
 
   <!-- Data -->
   <rect x="520" y="400" width="420" height="280" rx="14" class="layer"/>
-  <text x="540" y="430" class="label">6) Data Layer</text>
+  <text x="540" y="430" class="label">7) Data Layer</text>
 
   <rect x="550" y="470" width="170" height="60" rx="12" class="box"/>
   <text x="565" y="505" class="label">DynamoDB</text>
