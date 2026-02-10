@@ -3,7 +3,7 @@
 🚀 Software Engineer | Cloud & Backend Specialist  
 📍 Austin, TX  
 📧 tallapallydheeraj99@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/tallapally-dheeraj) | 🧑‍💻 [GitHub](https://github.com/YOUR_GITHUB_USERNAME)
+🔗 [LinkedIn](https://linkedin.com/in/tallapally-dheeraj) | 🧑‍💻 [GitHub](https://github.com/tallapallydheeraj)
 
 ---
 
