@@ -1,5 +1,5 @@
 # Site settings
-title: Dheeraj Tallapally
+#title: Dheeraj Tallapally
 description: >
   Software Engineer specializing in cloud-native systems, backend architecture,
   and scalable full-stack applications using AWS, Golang, Java, and React.
@@ -8,14 +8,14 @@ email: tallapallydheeraj99@gmail.com
 location: Austin, TX
 
 # URL settings
-url: "https://YOUR_GITHUB_USERNAME.github.io"
+url: "https://tallapallydheeraj.github.io"
 baseurl: "" # leave empty for user.github.io repos
 
 # GitHub Pages theme
 theme: minima
 
 # Social links
-github_username: YOUR_GITHUB_USERNAME
+github_username: tallapallydheeraj
 linkedin_username: tallapally-dheeraj
 
 # Build settings
