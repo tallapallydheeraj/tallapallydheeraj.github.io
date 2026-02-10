@@ -18,17 +18,18 @@ as much as feature delivery.
 ## What I Work On
 
 - Distributed, event-driven backend systems
-- AWS serverless architectures (Lambda + Step Functions)
-- API design and orchestration
+- AWS serverless and containerized workloads (Lambda, Step Functions, EKS)
+- API design and orchestration (Golang, Java, Node.js)
 - Workflow automation in complex business domains
 - Data modeling and performance optimization
+- AI-assisted development for faster, quality-focused delivery
 
 ---
 
 ## Technical Focus
 
 **Cloud & Backend**  
-AWS Lambda, Step Functions, DynamoDB, S3, IAM, EKS, Golang, Java, Spring Boot, Node.js
+AWS Lambda, Step Functions, EKS, DynamoDB, S3, IAM, Golang, Java, Node.js, Spring Boot
 
 **Data & Messaging**  
 MongoDB, MySQL, PostgreSQL, Redis, Kafka
@@ -43,15 +44,16 @@ Terraform, Docker, Kubernetes
 
 ## Selected Projects
 
-### Trade System — Stock Order Management
-A full-stack trading platform emphasizing correctness, transactional safety,
-and real-time analytics.
+### Trade System — Order Matching Platform
+Full-stack trading app: orders matched by quantity and price with transactional correctness.
 
-### Bug Tracking System — Secure Issue Management
-A role-based web platform supporting structured workflows, validations,
-and scalable relational data models.
+### Payment Project — UPI-Style Application
+UPI-like payments with overdraft and SDN list checks for compliance.
 
-👉 Visit the **Projects** page for architectural details.
+### BugHound — Bug Tracking System
+Role-based bug tracking with workflows, validations, and scalable data models.
+
+👉 Visit the **Projects** page for details and GitHub links.
 
 ---
 
@@ -65,4 +67,4 @@ and technical impact is available on the **Resume** page.
 ## Contact
 
 📧 tallapallydheeraj99@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/tallapally-dheeraj)
+🔗 [LinkedIn](https://linkedin.com/in/tallapally-dheeraj) · [GitHub](https://github.com/tallapallydheeraj)

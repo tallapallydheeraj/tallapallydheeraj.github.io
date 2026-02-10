@@ -5,7 +5,7 @@ and distributed workflows**.
 
 📍 Austin, TX  
 📧 tallapallydheeraj99@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/tallapally-dheeraj)
+🔗 [LinkedIn](https://linkedin.com/in/tallapally-dheeraj) · [GitHub](https://github.com/tallapallydheeraj)
 
 ---
 
@@ -22,8 +22,8 @@ My work focuses on:
 - Translating complex business processes into clean, maintainable systems
 
 I currently work at **Cigna (Evernorth / Accredo Specialty Pharmacy)**, where I help
-modernize and automate critical healthcare workflows using **AWS serverless
-architecture, Golang, Java, and Terraform**.
+modernize and automate critical healthcare workflows using **AWS serverless and
+EKS, Golang, Java, Node.js, Terraform, and AI-assisted development**.
 
 ---
 
@@ -40,7 +40,7 @@ architecture, Golang, Java, and Terraform**.
 ## Core Technologies
 
 **Backend & Cloud**  
-Golang, Java, Spring Boot, AWS Lambda, Step Functions, DynamoDB, S3, IAM
+Golang, Java, Node.js, Spring Boot, AWS Lambda, Step Functions, EKS, DynamoDB, S3, IAM
 
 **Data & Messaging**  
 MySQL, PostgreSQL, MongoDB, Redis, Kafka
@@ -51,15 +51,18 @@ React, Angular, TypeScript
 **DevOps & Infra**  
 Terraform, Docker, Kubernetes, Jenkins
 
+**Practices**  
+AI-assisted development (Copilot, Cursor) for faster, quality-focused delivery
+
 ---
 
 ## Featured Work
 
-- Cloud-native orchestration platform for specialty pharmacy workflows
-- Distributed backend systems using AWS Step Functions
-- Secure, role-based web applications with scalable data models
+- Cloud-native orchestration platform for specialty pharmacy (Lambda, EKS, Step Functions)
+- Distributed workflows and serverless/containerized microservices
+- Full-stack projects: Trade (order matching), Payment (UPI-style + SDN), BugHound (bug tracking)
 
-👉 See **Projects** for deep dives  
+👉 See **Projects** for deep dives and GitHub links  
 👉 See **Resume** for full experience
 
 ---
@@ -67,4 +70,4 @@ Terraform, Docker, Kubernetes, Jenkins
 ## Contact
 
 📧 tallapallydheeraj99@gmail.com  
-🔗 https://linkedin.com/in/tallapally-dheeraj
+🔗 [LinkedIn](https://linkedin.com/in/tallapally-dheeraj)

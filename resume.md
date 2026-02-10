@@ -4,7 +4,7 @@
 Software Engineer — Backend & Cloud Systems  
 Austin, TX  
 📧 tallapallydheeraj99@gmail.com  
-🔗 linkedin.com/in/tallapally-dheeraj
+🔗 [LinkedIn](https://linkedin.com/in/tallapally-dheeraj) · [GitHub](https://github.com/tallapallydheeraj)
 
 ---
 
@@ -28,18 +28,24 @@ API development, and microservices**, with hands-on experience using
 - Contribute to the design and development of a **cloud-native orchestration
 platform** modernizing specialty pharmacy workflows for patients with complex
 and chronic conditions.
-- Develop **serverless microservices using AWS Lambda (Golang & Java)** to
+- Develop **serverless microservices using AWS Lambda (Golang, Java, Node.js)** to
 handle prescription lifecycle management, onboarding, insurance validation,
 prior authorization, and medication refills.
 - Design and maintain **AWS Step Functions–based distributed workflows** to
 coordinate asynchronous services with retries, state management, and
 failure handling.
+- Build and support services on **Amazon EKS (Kubernetes)** for containerized
+workloads requiring orchestration and scaling.
+- Design and develop **product APIs** that expose specialty pharmacy capabilities
+to internal and partner systems, with clear contracts, versioning, and documentation.
 - Built a **reusable, generic API Lambda layer** enabling dynamic routing and
 invocation of downstream services, reducing duplicated logic across workflows.
 - Use **JSONata** for runtime payload transformation and conditional branching
 inside workflow executions.
 - Leverage **DynamoDB and MongoDB** for low-latency, schema-flexible data storage
 and **Redis caching** to improve performance.
+- Use **AI-assisted development tools** (e.g., Copilot, Cursor) to accelerate
+implementation, refactoring, and documentation while maintaining code quality.
 - Provision and manage infrastructure using **Terraform**, enabling consistent
 deployments across environments.
 - Ensure secure handling of sensitive healthcare data using **IAM, SSM,
@@ -85,9 +91,9 @@ Aug 2022 – May 2024
 
 ## Technical Skills
 
-**Languages:** Java, Golang, Python, JavaScript, TypeScript, SQL  
-**Cloud:** AWS (Lambda, Step Functions, DynamoDB, S3, IAM), Azure  
+**Languages:** Java, Golang, Node.js, Python, JavaScript, TypeScript, SQL  
+**Cloud:** AWS (Lambda, Step Functions, EKS, DynamoDB, S3, IAM), Azure  
 **Frameworks:** Spring Boot, React, Angular  
 **Data:** MySQL, PostgreSQL, MongoDB, Redis, Kafka  
 **Infra:** Terraform, Docker, Kubernetes  
-**Practices:** Microservices, REST APIs, Distributed Systems, Agile
+**Practices:** Microservices, REST APIs, Distributed Systems, Agile, AI-assisted development
