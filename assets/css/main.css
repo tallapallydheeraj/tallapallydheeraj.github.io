@@ -369,6 +369,8 @@ h3::before {
   content: '▸';
   position: absolute;
   left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   color: var(--accent-color);
   font-size: 1.2rem;
 }
@@ -1239,7 +1241,7 @@ pre:hover {
 
 .page-content h3:hover::before {
   color: var(--accent-color);
-  transform: translateX(4px);
+  transform: translateY(-50%);
 }
 
 /* Enhanced Footer */

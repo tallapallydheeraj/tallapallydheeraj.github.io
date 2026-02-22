@@ -47,28 +47,28 @@ Terraform, Docker, Kubernetes
 
 ## Featured Work
 
-### Clinical Adverse Event Detection — AI for Healthcare
+### [Clinical Adverse Event Detection — AI for Healthcare](/projects/#1-clinical-adverse-event-detection---ai-for-healthcare)
 RAG and LLM-based system to detect and explain adverse events in clinical data for patient safety and compliance.
 
-### Trade System — Order Matching Platform
+### [Trade System — Order Matching Platform](/projects/#2-trade-system---order-matching-platform)
 Full-stack trading app: orders matched by quantity and price with transactional correctness.
 
-### Payment Project — UPI-Style Application
+### [Payment Project — UPI-Style Application](/projects/#3-payment-project---upi-style-application)
 UPI-like payments with overdraft and SDN list checks for compliance.
 
-### BugHound — Bug Tracking System
+### [BugHound — Bug Tracking System](/projects/#4-bughound---bug-tracking-system)
 Role-based bug tracking with workflows, validations, and scalable data models.
 
-### Hospital Appointment System
+### [Hospital Appointment System](/projects/#6-hospital-appointment-system---appointment-management-platform)
 Python-based appointment management platform for healthcare facilities with SQLite persistence.
 
-### Sentiment Analysis
+### [Sentiment Analysis](/projects/#7-sentiment-analysis---twitter-dataset-analysis)
 Machine learning project analyzing Twitter datasets using NLP and sentiment classification.
 
-### Library Management System
+### [Library Management System](/projects/#8-library-management-system---java-application)
 Java application for managing library operations, books, members, and transactions.
 
-👉 Visit the **Projects** page for details and GitHub links.
+👉 Visit the **Projects** page for details, GitHub links, and live demos.
 
 ---
 
