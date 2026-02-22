@@ -2,17 +2,13 @@
 title: Home
 ---
 
-## Software Engineer — Backend & Cloud Systems
+## Software Engineer — Distributed & Cloud-Native Systems
 
-I'm **Dheeraj Tallapally**, a Software Engineer based in Austin, TX, specializing in
-**cloud-native backend systems and distributed workflows**.
+I'm **Dheeraj Tallapally**, a Software Engineer based in Austin, TX, specializing in **cloud-native backend systems, distributed workflows, and AI-enabled platforms**.
 
-I currently work at **Cigna (Evernorth / Accredo Specialty Pharmacy)**, building
-and operating **AWS-based serverless systems** that orchestrate critical healthcare
-operations such as **patient data and prescriptions**, **order scheduling for prescriptions**, **drug substitution** (complex clinical logic), onboarding, and medication refills.
+At **Cigna (Evernorth / Accredo Specialty Pharmacy)**, I design and operate **AWS-based serverless systems** that orchestrate mission-critical healthcare workflows, including patient data processing, prescription scheduling, drug substitution logic, onboarding, and medication refills. My work focuses on **scalable APIs**, **event-driven architectures**, and **reliability** in production environments.
 
-I enjoy working on problems where **scale, correctness, and reliability** matter
-as much as feature delivery.
+I'm particularly interested in building systems where **distributed design**, **observability**, and **intelligent automation** intersect to improve real-world outcomes.
 
 ---
 
@@ -23,12 +19,11 @@ as much as feature delivery.
 - API design and orchestration (Golang, Java, Node.js, Python)
 - Workflow automation in complex business domains
 - Data modeling and performance optimization
-- Data science and machine learning (sentiment analysis, NLP)
-- AI-assisted development for faster, quality-focused delivery
+- Data science and machine learning (sentiment analysis, NLP, RAG/LLMs)
 
 ---
 
-## Technical Focus
+## Technical Focus & Skills
 
 **Cloud & Backend**  
 AWS Lambda, Step Functions, EKS, DynamoDB, S3, IAM, Golang, Java, Node.js, Python, Spring Boot
@@ -37,7 +32,10 @@ AWS Lambda, Step Functions, EKS, DynamoDB, S3, IAM, Golang, Java, Node.js, Pytho
 MongoDB, MySQL, PostgreSQL, Redis, Kafka, SQLite
 
 **Data Science & ML**  
-Python, Jupyter Notebooks, Sentiment Analysis, NLP
+Python, Jupyter Notebooks, Sentiment Analysis, NLP, RAG, LLMs
+
+**AI & Tooling**  
+Explainable AI (healthcare), RAG/LLMs, AI-assisted development
 
 **Frontend & Integration**  
 React, Angular, REST APIs
@@ -47,27 +45,30 @@ Terraform, Docker, Kubernetes
 
 ---
 
-## Selected Projects
+## Featured Work
 
-### Trade System — Order Matching Platform
+### [Clinical Adverse Event Detection — AI for Healthcare](/projects/#1-clinical-adverse-event-detection---ai-for-healthcare)
+RAG and LLM-based system to detect and explain adverse events in clinical data for patient safety and compliance.
+
+### [Trade System — Order Matching Platform](/projects/#2-trade-system---order-matching-platform)
 Full-stack trading app: orders matched by quantity and price with transactional correctness.
 
-### Payment Project — UPI-Style Application
+### [Payment Project — UPI-Style Application](/projects/#3-payment-project---upi-style-application)
 UPI-like payments with overdraft and SDN list checks for compliance.
 
-### BugHound — Bug Tracking System
+### [BugHound — Bug Tracking System](/projects/#4-bughound---bug-tracking-system)
 Role-based bug tracking with workflows, validations, and scalable data models.
 
-### Hospital Appointment System
+### [Hospital Appointment System](/projects/#6-hospital-appointment-system---appointment-management-platform)
 Python-based appointment management platform for healthcare facilities with SQLite persistence.
 
-### Sentiment Analysis
+### [Sentiment Analysis](/projects/#7-sentiment-analysis---twitter-dataset-analysis)
 Machine learning project analyzing Twitter datasets using NLP and sentiment classification.
 
-### Library Management System
+### [Library Management System](/projects/#8-library-management-system---java-application)
 Java application for managing library operations, books, members, and transactions.
 
-👉 Visit the **Projects** page for details and GitHub links.
+👉 Visit the **Projects** page for details, GitHub links, and live demos.
 
 ---
 

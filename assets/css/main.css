@@ -369,6 +369,8 @@ h3::before {
   content: '▸';
   position: absolute;
   left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   color: var(--accent-color);
   font-size: 1.2rem;
 }
@@ -1178,6 +1180,27 @@ pre:hover {
   opacity: 1;
 }
 
+/* Inline SVG architecture diagrams (e.g. Clinical AE Detection) */
+.architecture-diagram svg {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: auto;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  background: var(--bg-primary);
+  padding: 1.5rem;
+  transition: all 0.4s ease;
+}
+
+.architecture-diagram:hover svg {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--accent-color);
+  border-width: 3px;
+}
+
 /* Section Dividers */
 .page-content > hr {
   position: relative;
@@ -1218,7 +1241,7 @@ pre:hover {
 
 .page-content h3:hover::before {
   color: var(--accent-color);
-  transform: translateX(4px);
+  transform: translateY(-50%);
 }
 
 /* Enhanced Footer */
