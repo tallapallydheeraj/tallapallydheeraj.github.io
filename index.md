@@ -2,7 +2,7 @@
 title: Home
 ---
 
-## Software Engineer — Backend & Cloud Systems
+## Software Engineer — Distributed & Cloud-Native Systems
 
 I'm **Dheeraj Tallapally**, a Software Engineer based in Austin, TX, specializing in **cloud-native backend systems, distributed workflows, and AI-enabled platforms**.
 

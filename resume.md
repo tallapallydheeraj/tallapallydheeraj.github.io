@@ -3,7 +3,7 @@ title: Resume
 ---
 
 ## Dheeraj Tallapally
-Software Engineer — Backend & Cloud Systems  
+Software Engineer — Distributed & Cloud-Native Systems  
 Austin, TX  
 📧 tallapallydheeraj99@gmail.com  
 🔗 [LinkedIn](https://linkedin.com/in/tallapally-dheeraj) · [GitHub](https://github.com/tallapallydheeraj)
