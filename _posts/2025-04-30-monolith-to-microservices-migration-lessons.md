@@ -50,3 +50,4 @@ When something breaks (and it will), you need to know whether it’s the monolit
 ---
 
 **Summary:** Migrate in small, contract-first slices; own capabilities and data clearly; invest in observability and accept some short-term complexity. That keeps the migration low-risk and reversible while you gradually retire the monolith.
+
