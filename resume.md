@@ -19,7 +19,7 @@ production environments.
 Strong background in **AWS serverless architecture, workflow orchestration,
 API development, and microservices**, with hands-on experience using
 **Golang, Java, Node.js, Python, and Terraform**. Additional expertise in
-**data science, machine learning, and AI**—including sentiment analysis, NLP, RAG/LLM applications, and AI-assisted development in production.
+**data science, machine learning, and AI**—including sentiment analysis, NLP, RAG/LLM applications, and AI-enabled platforms in production.
 
 ---
 
@@ -45,9 +45,7 @@ to internal and partner systems, with clear contracts, versioning, and documenta
 inside workflow executions.
 - Leverage **DynamoDB and MongoDB** for low-latency, schema-flexible data storage
 and **Redis caching** to improve performance.
-- Use **AI-assisted development tools** (e.g., Copilot, Cursor) to accelerate
-implementation, refactoring, and documentation while maintaining code quality.
-- Set up **GitHub Copilot to automatically review every PR**, with custom instructions to make reviews easier and more consistent across the team.
+- Use **AI-assisted tooling** to accelerate implementation and reviews while maintaining code quality; configured automated PR review with custom team instructions.
 - Provision and manage infrastructure using **Terraform**, enabling consistent
 deployments across environments.
 - Ensure secure handling of sensitive healthcare data using **IAM, KMS, SSM,
@@ -62,23 +60,27 @@ in an agile environment.
 ### DBS Tech — Full Stack Developer  
 **Hyderabad, India | Jul 2021 – Jul 2022**
 
-- Migrated monolithic systems to **microservices architecture** using Spring Boot.
-- Designed and implemented **RESTful APIs** for service-to-service communication.
-- Built front-end applications using **Angular and React**.
-- Implemented persistence layers with **Spring Data JPA** and optimized SQL
-queries for MariaDB.
-- Integrated **Apache Kafka** for event-driven communication.
-- Used **Bitbucket and Jira** for version control and agile project management.
+- Contributed to the modernization of enterprise applications by transitioning monolithic systems to **scalable microservices architecture**.
+- Led migration of legacy monolith to **Spring Boot–based microservices**, improving deployment independence, fault isolation, and scalability.
+- Designed and implemented **RESTful APIs** with clear contracts and versioning to support internal and external integrations.
+- Built responsive frontend applications using **React and Angular**, enabling API-driven user workflows and improved user experience.
+- Modeled relational schemas and optimized complex **SQL queries** using **Spring Data JPA** and **MariaDB**, improving performance for high-traffic workflows.
+- Implemented **event-driven communication** using **Apache Kafka**, enabling asynchronous service coordination across distributed systems.
+- Participated in architectural discussions, sprint planning, peer code reviews, and debugging sessions within an agile team.
+- Improved **CI/CD practices** and supported environment deployments to ensure reliable production releases.
 
 ---
 
 ### Microsoft (via MAQ Software) — Associate Software Engineer  
 **Hyderabad, India | Dec 2020 – Jul 2021**
 
-- Enhanced Power BI dashboards, improving reporting efficiency by 50%.
-- Built analytics reports improving productivity and engagement.
-- Resolved 100+ data and debugging issues using Spark SQL.
-- Gained exposure to Azure Cloud Services, ML, NLP, and Data Science concepts.
+- Worked on enterprise analytics and reporting systems supporting internal operational decision-making.
+- Redesigned and optimized **Power BI dashboards**, improving reporting efficiency by **50%** and reducing manual analysis efforts.
+- Built data transformation workflows using **Spark SQL**, enabling structured analytics across large datasets.
+- Diagnosed and resolved **100+ production data issues**, performing root cause analysis and improving system stability.
+- Automated recurring reporting processes to reduce manual intervention and improve data consistency.
+- Gained hands-on exposure to **Azure cloud services**, **ML concepts**, and **NLP tooling**, contributing to data-driven experimentation initiatives.
+- Collaborated with cross-functional teams to refine reporting requirements and deliver iterative improvements.
 
 ---
 

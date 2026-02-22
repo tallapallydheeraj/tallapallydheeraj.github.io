@@ -4,15 +4,11 @@ title: Home
 
 ## Software Engineer — Backend & Cloud Systems
 
-I'm **Dheeraj Tallapally**, a Software Engineer based in Austin, TX, specializing in
-**cloud-native backend systems, distributed workflows, and AI/ML** (from explainable healthcare AI to NLP and tooling).
+I'm **Dheeraj Tallapally**, a Software Engineer based in Austin, TX, specializing in **cloud-native backend systems, distributed workflows, and AI-enabled platforms**.
 
-I currently work at **Cigna (Evernorth / Accredo Specialty Pharmacy)**, building
-and operating **AWS-based serverless systems** that orchestrate critical healthcare
-operations such as **patient data and prescriptions**, **order scheduling for prescriptions**, **drug substitution** (complex clinical logic), onboarding, and medication refills. I use **AI-assisted tools** (e.g. Copilot, Cursor) to develop and review faster—I never depend on them; I always review and validate the output.
+At **Cigna (Evernorth / Accredo Specialty Pharmacy)**, I design and operate **AWS-based serverless systems** that orchestrate mission-critical healthcare workflows, including patient data processing, prescription scheduling, drug substitution logic, onboarding, and medication refills. My work focuses on **scalable APIs**, **event-driven architectures**, and **reliability** in production environments.
 
-I enjoy working on problems where **scale, correctness, and reliability** matter
-as much as feature delivery.
+I'm particularly interested in building systems where **distributed design**, **observability**, and **intelligent automation** intersect to improve real-world outcomes.
 
 ---
 
@@ -49,7 +45,7 @@ Terraform, Docker, Kubernetes
 
 ---
 
-## Selected Projects
+## Featured Work
 
 ### Clinical Adverse Event Detection — AI for Healthcare
 RAG and LLM-based system to detect and explain adverse events in clinical data for patient safety and compliance.

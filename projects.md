@@ -3,7 +3,7 @@ title: Projects
 ---
 
 <div class="projects-intro">
-  <p>Selected work that demonstrates <strong>scalable backend systems, full-stack development, production-ready design, and AI/ML (RAG, LLMs, NLP)</strong>. Each project includes source code and documentation on GitHub; where applicable, live demos and architecture notes are linked.</p>
+  <p>Featured work that demonstrates <strong>scalable backend systems, full-stack development, production-ready design, and AI/ML (RAG, LLMs, NLP)</strong>. Each project includes source code and documentation on GitHub; where applicable, live demos and architecture notes are linked.</p>
 </div>
 
 ---

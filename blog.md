@@ -4,13 +4,11 @@ title: Blog
 permalink: /blog/
 ---
 
-Engineering notes on **serverless design, APIs, and migration** — things I've learned building and operating cloud-native systems.
+Engineering notes on **serverless design, APIs, migration, and AI/ML** — things I've learned building and operating cloud-native systems.
 
 ---
 
 ## Posts
-
-*Latest first.*
 
 **[Clinical Adverse Event Detection with RAG and LLMs](/2025/10/15/clinical-adverse-event-detection-ai.html)**  
 *Oct 15, 2025* — RAG and LLM-based adverse event detection in clinical data for patient safety and explainability.
