@@ -19,8 +19,7 @@ production environments.
 Strong background in **AWS serverless architecture, workflow orchestration,
 API development, and microservices**, with hands-on experience using
 **Golang, Java, Node.js, Python, and Terraform**. Additional expertise in
-**data science and machine learning**, including sentiment analysis and NLP
-projects.
+**data science, machine learning, and AI**—including sentiment analysis, NLP, RAG/LLM applications, and AI-assisted development in production.
 
 ---
 
@@ -98,6 +97,27 @@ Aug 2022 – May 2024
 **Cloud:** AWS (Lambda, Step Functions, EKS, DynamoDB, S3, IAM, CloudWatch), Azure Cloud  
 **Frameworks:** Spring Boot, React, Angular  
 **Data:** MySQL, PostgreSQL, MongoDB, Redis, Kafka, SQLite  
-**Data Science & ML:** Jupyter Notebooks, Sentiment Analysis, NLP  
+**Data Science & ML:** Jupyter Notebooks, Sentiment Analysis, NLP, RAG, LLMs  
+**AI & practices:** AI-assisted development (Copilot, Cursor), automated PR review, explainable AI  
 **Infra:** Terraform, Docker, Kubernetes  
-**Practices:** Microservices, REST APIs, Distributed Systems, Agile, AI-assisted development
+**Practices:** Microservices, REST APIs, Distributed Systems, Agile
+
+---
+
+## Projects
+
+**[Clinical Adverse Event Detection — AI for Healthcare](/projects/#1-clinical-adverse-event-detection---ai-for-healthcare)** — RAG and LLM-based system to detect and explain adverse events in clinical data for patient safety and compliance.
+
+**[Trade System — Order Matching Platform](/projects/#2-trade-system---order-matching-platform)** — Full-stack trading app: orders matched by quantity and price with transactional correctness.
+
+**[Payment Project — UPI-Style Application](/projects/#3-payment-project---upi-style-application)** — UPI-like payments with overdraft and SDN list checks for compliance.
+
+**[BugHound — Bug Tracking System](/projects/#4-bughound---bug-tracking-system)** — Role-based bug tracking with workflows, validations, and scalable data models.
+
+**[Cloud & Serverless Systems (Professional Work)](/projects/#5-cloud--serverless-systems-professional-work)** — Cloud-native orchestration platform for specialty pharmacy workflows at Cigna.
+
+**[Hospital Appointment System — Appointment Management Platform](/projects/#6-hospital-appointment-system---appointment-management-platform)** — Python-based appointment management platform for healthcare facilities with SQLite persistence.
+
+**[Sentiment Analysis — Twitter Dataset Analysis](/projects/#7-sentiment-analysis---twitter-dataset-analysis)** — Machine learning project analyzing Twitter datasets using NLP and sentiment classification.
+
+**[Library Management System — Java Application](/projects/#8-library-management-system---java-application)** — Java application for managing library operations, books, members, and transactions.

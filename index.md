@@ -5,11 +5,11 @@ title: Home
 ## Software Engineer — Backend & Cloud Systems
 
 I'm **Dheeraj Tallapally**, a Software Engineer based in Austin, TX, specializing in
-**cloud-native backend systems and distributed workflows**.
+**cloud-native backend systems, distributed workflows, and AI/ML** (from explainable healthcare AI to NLP and tooling).
 
 I currently work at **Cigna (Evernorth / Accredo Specialty Pharmacy)**, building
 and operating **AWS-based serverless systems** that orchestrate critical healthcare
-operations such as **patient data and prescriptions**, **order scheduling for prescriptions**, **drug substitution** (complex clinical logic), onboarding, and medication refills.
+operations such as **patient data and prescriptions**, **order scheduling for prescriptions**, **drug substitution** (complex clinical logic), onboarding, and medication refills. I use **AI-assisted tools** (e.g. Copilot, Cursor) to develop and review faster—I never depend on them; I always review and validate the output.
 
 I enjoy working on problems where **scale, correctness, and reliability** matter
 as much as feature delivery.
@@ -23,12 +23,11 @@ as much as feature delivery.
 - API design and orchestration (Golang, Java, Node.js, Python)
 - Workflow automation in complex business domains
 - Data modeling and performance optimization
-- Data science and machine learning (sentiment analysis, NLP)
-- AI-assisted development for faster, quality-focused delivery
+- Data science and machine learning (sentiment analysis, NLP, RAG/LLMs)
 
 ---
 
-## Technical Focus
+## Technical Focus & Skills
 
 **Cloud & Backend**  
 AWS Lambda, Step Functions, EKS, DynamoDB, S3, IAM, Golang, Java, Node.js, Python, Spring Boot
@@ -37,7 +36,10 @@ AWS Lambda, Step Functions, EKS, DynamoDB, S3, IAM, Golang, Java, Node.js, Pytho
 MongoDB, MySQL, PostgreSQL, Redis, Kafka, SQLite
 
 **Data Science & ML**  
-Python, Jupyter Notebooks, Sentiment Analysis, NLP
+Python, Jupyter Notebooks, Sentiment Analysis, NLP, RAG, LLMs
+
+**AI & Tooling**  
+Explainable AI (healthcare), RAG/LLMs, AI-assisted development
 
 **Frontend & Integration**  
 React, Angular, REST APIs
@@ -48,6 +50,9 @@ Terraform, Docker, Kubernetes
 ---
 
 ## Selected Projects
+
+### Clinical Adverse Event Detection — AI for Healthcare
+RAG and LLM-based system to detect and explain adverse events in clinical data for patient safety and compliance.
 
 ### Trade System — Order Matching Platform
 Full-stack trading app: orders matched by quantity and price with transactional correctness.
