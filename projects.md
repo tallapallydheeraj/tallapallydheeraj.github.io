@@ -8,6 +8,7 @@ title: Projects
 
 ---
 
+<a id="1-clinical-adverse-event-detection---ai-for-healthcare"></a>
 ## 1. Clinical Adverse Event Detection — AI for Healthcare
 
 **Repository:** [github.com/tallapallydheeraj/ai-clinical-ae-detection](https://github.com/tallapallydheeraj/ai-clinical-ae-detection) · **Live app:** [Clinical AE Assessment](https://clinical-ae-agent-bmj4hszpwa-uc.a.run.app/)
@@ -77,6 +78,7 @@ A system that helps healthcare teams **identify and understand adverse events** 
 
 ---
 
+<a id="2-trade-system---order-matching-platform"></a>
 ## 2. Trade System — Order Matching Platform
 
 **Repository:** [github.com/tallapallydheeraj/Ordermatching](https://github.com/tallapallydheeraj/Ordermatching)
@@ -103,6 +105,7 @@ A full-stack **trading application** where buy and sell orders are matched by **
 
 ---
 
+<a id="3-payment-project---upi-style-application"></a>
 ## 3. Payment Project — UPI-Style Application
 
 **Repository:** [github.com/tallapallydheeraj/Payment-Project](https://github.com/tallapallydheeraj/Payment-Project)
@@ -125,6 +128,7 @@ A **UPI-style payment application** with overdraft support and **SDN (Specially 
 
 ---
 
+<a id="4-bughound---bug-tracking-system"></a>
 ## 4. BugHound — Bug Tracking System
 
 **Repository:** [github.com/tallapallydheeraj/BugHound](https://github.com/tallapallydheeraj/BugHound)
@@ -151,6 +155,7 @@ A **bug tracking system** to log, triage, and resolve defects—and reduce recur
 
 ---
 
+<a id="5-cloud--serverless-systems-professional-work"></a>
 ## 5. Cloud & Serverless Systems (Professional Work)
 
 At **Cigna (Evernorth / Accredo)**, I build and operate a **cloud-native orchestration platform** for specialty pharmacy workflows.
@@ -194,6 +199,7 @@ AWS API Gateway, Lambda (Golang, Java, Node.js), Step Functions (JSONata), EKS, 
 
 ---
 
+<a id="6-hospital-appointment-system---appointment-management-platform"></a>
 ## 6. Hospital Appointment System — Appointment Management Platform
 
 **Repository:** [github.com/tallapallydheeraj/Hospital-Appointment](https://github.com/tallapallydheeraj/Hospital-Appointment)
@@ -217,6 +223,7 @@ A **Python-based hospital appointment management system** that simulates appoint
 
 ---
 
+<a id="7-sentiment-analysis---twitter-dataset-analysis"></a>
 ## 7. Sentiment Analysis — Twitter Dataset Analysis
 
 **Repository:** [github.com/tallapallydheeraj/Sentiment-Analysis](https://github.com/tallapallydheeraj/Sentiment-Analysis)
@@ -240,6 +247,7 @@ A **machine learning project** that performs sentiment analysis on Twitter datas
 
 ---
 
+<a id="8-library-management-system---java-application"></a>
 ## 8. Library Management System — Java Application
 
 **Repository:** [github.com/tallapallydheeraj/Library-Management-System](https://github.com/tallapallydheeraj/Library-Management-System)

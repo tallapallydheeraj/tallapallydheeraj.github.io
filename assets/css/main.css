@@ -1314,6 +1314,12 @@ html {
   scroll-margin-top: 80px;
 }
 
+/* Fragment link targets: leave room for fixed header when scrolling from Home/Resume */
+.page-content a[id] {
+  display: block;
+  scroll-margin-top: 80px;
+}
+
 /* Print Optimizations */
 @media print {
   .site-header {
